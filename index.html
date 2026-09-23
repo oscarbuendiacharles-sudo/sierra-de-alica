@@ -1,0 +1,852 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sierra de Álica | Fundación Biósfera de Álica, A.C.</title>
+<meta name="description" content="El libro completo de la Fundación Biósfera de Álica, A.C.: territorio, causas, proyectos, bonos de carbono y fauna de la Sierra de Álica, Nayarit.">
+<link rel="icon" href="assets/jaguar.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sierra de Álica | Fundación Biósfera de Álica, A.C.">
+<meta property="og:description" content="El libro completo de la Fundación Biósfera de Álica, A.C., en línea: territorio, causas, proyectos, bonos de carbono y fauna de la Sierra de Álica.">
+<meta property="og:image" content="assets/fotos/index-cover.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Karla:wght@400;500;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+@page { size: A4 portrait; margin: 0; }
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:'Karla',sans-serif;color:#1c1c1c;background:#ccc}
+img{max-width:none}
+
+.pg{
+  position:relative; width:8.27in; height:11.69in; overflow:hidden;
+  break-after:page; background:#fff;
+}
+.pg:last-child{break-after:auto}
+
+/* ---------- COVER ---------- */
+.pg-cover .photo{position:absolute;inset:0;background-size:cover;background-position:center}
+.pg-cover .frame{position:absolute;inset:.35in;border:1px solid rgba(255,255,255,.85);pointer-events:none}
+.pg-cover .band{position:absolute;left:.75in;right:.75in;background:rgba(20,25,40,.82);padding:.32in .4in;color:#fff}
+.pg-cover .band-title{top:1.5in}
+.pg-cover .band-title h1{margin:0;font-family:'Fraunces';font-weight:700;font-size:27pt;letter-spacing:.02em;text-transform:uppercase;line-height:1.15}
+.pg-cover .band-title p{margin:.16in 0 0;font-family:'JetBrains Mono';font-size:9.5pt;letter-spacing:.1em;text-transform:uppercase;border-top:1px solid rgba(255,255,255,.5);padding-top:.14in}
+.pg-cover .band-pub{bottom:1.15in;text-align:center;font-family:'JetBrains Mono';letter-spacing:.14em;font-size:9.5pt;text-transform:uppercase}
+
+/* ---------- FRONTISPIECE ---------- */
+.pg-front .photo{position:absolute;inset:0;background-size:cover;background-position:center}
+.pg-front .wash{position:absolute;inset:0;background:rgba(255,255,255,.87)}
+.pg-front .content{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.pg-front img.mark{width:1.5in;margin-bottom:.35in;filter:drop-shadow(0 2px 6px rgba(0,0,0,.15))}
+.pg-front .org{font-family:'Fraunces';font-weight:600;font-size:13pt;border-bottom:1px solid #333;padding-bottom:.12in;letter-spacing:.02em}
+.pg-front .rights{position:absolute;bottom:.7in;left:0;right:0;text-align:center;font-size:7.5pt;color:#555}
+
+/* ---------- CONTENIDO (TOC) ---------- */
+.pg-toc{padding:1in 1.1in .7in}
+.pg-toc .tockicker{font-family:'JetBrains Mono';font-size:8pt;letter-spacing:.14em;text-transform:uppercase;color:#999;margin:0 0 .1in}
+.pg-toc h1{font-family:'Fraunces';font-weight:700;letter-spacing:.01em;margin:0 0 .42in;font-size:25pt;color:#1c1c1c}
+.pg-toc .toclist{display:flex;flex-direction:column}
+.tocrow{display:flex;align-items:flex-start;gap:.28in;padding:.24in 0;border-bottom:1px solid #e6e6e6}
+.tocrow:first-child{border-top:1px solid #333}
+.tocnum{font-family:'JetBrains Mono';font-weight:700;font-size:15pt;flex:0 0 .55in;padding-top:.03in}
+.tocbar{width:3px;align-self:stretch;border-radius:2px;flex:0 0 auto}
+.toctext{display:flex;flex-direction:column;gap:.05in}
+.toctitle{font-family:'Fraunces';font-weight:700;font-size:15.5pt;color:#1c1c1c}
+.tocdesc{font-size:9.5pt;color:#888;letter-spacing:.01em}
+
+/* ---------- CAPTION DE FOTO (regla unica de formato, en todo el libro) ---------- */
+.cap{position:absolute;right:.25in;bottom:.14in;color:#fff;font-size:8pt;font-family:'JetBrains Mono';text-shadow:0 1px 4px rgba(0,0,0,.85);z-index:2}
+
+/* ---------- CONTENT PAGE ---------- */
+.pg-content .photo{position:absolute;top:0;left:0;right:0;height:4.5in;background-size:cover;background-position:center}
+.pg-content .body{position:absolute;top:4.68in;left:.75in;right:.75in;bottom:.55in}
+.kicker{font-family:'JetBrains Mono';font-size:8pt;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:0 0 .09in}
+.pg-content h2, .pg-band h2, .pg-projects h2, .pg-twin h2, .pg-list h2, .pg-stat h2, .pg-tablepage h2, .pg-text h2, .pg-contact h2{
+  font-family:'Fraunces';font-weight:700;font-size:16.5pt;margin:0 0 .18in;letter-spacing:0;line-height:1.18;color:#1c1c1c;
+}
+.pg-content p, .pg-text p, .pg-stat p{font-size:11pt;line-height:1.72;margin:0 0 .2in;color:#333}
+ul.leaf{list-style:none;padding:0;margin:.2in 0 0}
+ul.leaf li{position:relative;padding-left:.26in;font-size:10.4pt;line-height:1.58;margin-bottom:.17in;color:#333}
+ul.leaf li::before{content:"\2756";position:absolute;left:0;color:var(--accent);font-size:8pt;top:.05in}
+.cite{font-size:7.2pt;color:#777;font-style:italic;border-top:1px solid #ddd;padding-top:.09in;margin-top:.16in}
+.pullquote{margin-top:.5in;padding-top:.32in;border-top:1px solid #e2e2e2;font-family:'Fraunces';font-style:italic;font-weight:400;font-size:15pt;line-height:1.5;color:var(--accent);max-width:34ch}
+.pullquote .pqmark{display:block;font-style:normal;font-size:26pt;line-height:.6;margin-bottom:.08in;opacity:.55}
+/* pie de pagina: unico formato en todo el libro, siempre el mismo. */
+.footfolio{position:absolute;bottom:.32in;left:.75in;font-family:'JetBrains Mono';font-size:7.3pt;letter-spacing:.05em;text-transform:uppercase;color:#999}
+.footfolio-band{color:rgba(255,255,255,.75)}
+.factrow{display:flex;gap:1px;background:#ddd;border:1px solid #ddd;margin-top:.2in}
+.fact{flex:1;background:#fff;padding:.16in .12in;text-align:center}
+.fact b{display:block;font-family:'Fraunces';font-weight:700;font-size:14pt;color:var(--accent)}
+.fact span{display:block;font-size:7.6pt;color:#666;margin-top:.04in;text-transform:uppercase;letter-spacing:.02em}
+
+/* ---------- PHOTO BREATHER ---------- */
+.pg-photo .photo{position:absolute;inset:0;background-size:cover;background-position:center}
+.pg-photo .frame{position:absolute;inset:.5in;border:1px solid rgba(255,255,255,.7);pointer-events:none}
+.pg-photo .cap{right:.75in;bottom:.65in}
+
+/* ---------- COLOR BAND ---------- */
+.pg-band{background:var(--accent);color:#fff;display:flex;flex-direction:column;justify-content:center;padding:1.3in 1.1in}
+.pg-band .kicker{color:rgba(255,255,255,.82)}
+.pg-band h2{color:#fff;font-size:23pt;line-height:1.28;max-width:20ch}
+.pg-band-values{justify-content:flex-start;padding-top:1.1in}
+.vhead{margin-bottom:.5in}
+.vhead h2{font-size:18pt;max-width:26ch}
+.vgrid{display:flex;flex-direction:column;gap:1px;background:rgba(255,255,255,.25)}
+.vcard{background:rgba(255,255,255,.08);padding:.22in .1in}
+.vcard h3{font-family:'Fraunces';font-weight:700;font-size:11.5pt;margin:0 0 .05in;color:#fff}
+.vcard p{font-size:9.3pt;margin:0;color:rgba(255,255,255,.85);line-height:1.4}
+
+/* ---------- PROJECTS ---------- */
+.pg-projects{padding:.9in .85in .6in}
+.pg-projects-photo{padding:0}
+.pg-projects-photo .photo-side{position:absolute;top:0;left:0;right:0;height:4.5in;background-size:cover;background-position:center}
+.pg-projects-photo .pbody{position:absolute;top:4.68in;left:.75in;right:.75in;bottom:.55in}
+.pentry{display:flex;gap:.22in;margin-top:.34in;align-items:flex-start}
+.pentry .pnum{font-family:'JetBrains Mono';font-size:9.5pt;color:var(--accent);flex:0 0 auto;padding-top:.03in}
+.pentry h3{font-family:'Fraunces';font-weight:700;font-size:12.5pt;margin:0 0 .07in}
+.pentry p{font-size:10.4pt;margin:0;color:#333;line-height:1.56}
+.pg-projects-photo .pullquote{margin-top:.42in}
+
+/* ---------- TWIN PHOTO ---------- */
+.pg-twin{padding:.9in .85in .6in}
+.twingrid{display:flex;gap:.35in;margin-top:.35in}
+.twin{flex:1}
+.tphoto{position:relative;width:100%;aspect-ratio:3/4;background-size:cover;background-position:center;margin-bottom:.18in;border:1px solid #ddd}
+.twinhead{display:flex;align-items:baseline;gap:.14in}
+.twinhead .pnum{font-family:'JetBrains Mono';font-size:9pt;color:var(--accent)}
+.twin h3{font-family:'Fraunces';font-weight:700;font-size:12.5pt;margin:0 0 .08in}
+.twin p{font-size:10.4pt;color:#333;line-height:1.6;margin:0}
+
+/* ---------- STAT PAGE (Bonos hero) ---------- */
+.pg-stat{padding:1.1in .9in .6in}
+.statgrid{display:flex;gap:.25in;margin-top:.3in}
+.statbox{flex:1;border:1px solid #ddd;padding:.2in .16in;text-align:center}
+.statbox b{display:block;font-family:'Fraunces';font-weight:700;font-size:16pt;color:var(--accent)}
+.statbox span{display:block;font-size:7.8pt;color:#666;margin-top:.05in;line-height:1.3}
+
+/* ---------- LIST PAGE ---------- */
+.pg-list{padding:1.05in .85in .6in}
+.pg-list .lede{font-size:10pt;color:#555;margin:.08in 0 0;max-width:64ch;line-height:1.45}
+.litem{display:flex;gap:.22in;margin-top:.26in;align-items:flex-start}
+.litem .lnum{font-family:'JetBrains Mono';font-size:9.5pt;color:var(--accent);flex:0 0 auto}
+.litem h3{font-family:'Fraunces';font-weight:700;font-size:11.5pt;margin:0 0 .05in}
+.litem p{font-size:9.6pt;margin:0;color:#333;line-height:1.42}
+
+/* ---------- DUAL LIST (paginas fusionadas) ---------- */
+.dualgrid{display:flex;gap:.5in;margin-top:.32in}
+.dualcol{flex:1}
+.dualhead{font-family:'JetBrains Mono';font-size:9pt;text-transform:uppercase;letter-spacing:.06em;color:var(--accent);margin:0 0 .04in;padding-bottom:.12in;border-bottom:1px solid #ddd}
+.dualcol .litem{margin-top:.24in}
+.dualcol .litem h3{font-size:10.8pt}
+.dualcol .litem p{font-size:9.2pt}
+
+/* ---------- TABLE PAGE ---------- */
+.pg-tablepage{padding:1.05in .8in .6in}
+.pg-tablepage .lede{font-size:10pt;color:#555;margin:.08in 0 .22in;max-width:70ch;line-height:1.4}
+.tphoto2{position:relative;width:100%;height:1.7in;background-size:cover;background-position:center;margin-bottom:.26in;border:1px solid #ddd}
+table{width:100%;border-collapse:collapse;font-size:8.6pt}
+th,td{border:1px solid #ccc;padding:.09in .1in;text-align:left;vertical-align:top;line-height:1.32;word-wrap:break-word}
+th{background:#eee;font-family:'JetBrains Mono';font-size:7.2pt;text-transform:uppercase;letter-spacing:.03em}
+tr.hl td{background:#eef3e9;font-weight:700}
+table.wide{table-layout:fixed;font-size:8pt}
+table.wide th:nth-child(1),table.wide td:nth-child(1){width:15%}
+table.wide th:nth-child(2),table.wide td:nth-child(2){width:10%}
+table.wide th:nth-child(3),table.wide td:nth-child(3){width:9%}
+table.wide th:nth-child(4),table.wide td:nth-child(4){width:9%}
+table.wide th:nth-child(5),table.wide td:nth-child(5){width:57%}
+table.wide tr.hl td:nth-child(5){font-weight:400}
+
+/* ---------- FAUNA GRID ---------- */
+.pg-fauna{padding:1.05in .85in .6in}
+.pg-fauna .lede{font-size:10.5pt;color:#555;margin:.1in 0 0;max-width:64ch;line-height:1.5}
+.faunagrid{display:flex;gap:.28in;margin-top:.32in}
+.faunacard{flex:1}
+.faunacard .fphoto{width:100%;aspect-ratio:3/4;background-size:cover;background-position:center;margin-bottom:.15in;border:1px solid #ddd}
+.faunacard h3{font-family:'Fraunces';font-weight:700;font-size:12.5pt;margin:0 0 .02in}
+.faunacard .fsci{font-family:'JetBrains Mono';font-style:italic;font-size:8pt;color:var(--accent);margin:0 0 .1in}
+.faunacard .fnote{font-size:9.2pt;color:#333;line-height:1.46;margin:0}
+.fauna-cite{margin-top:.32in}
+
+/* ---------- TEXT PAGE ---------- */
+.pg-text{padding:1.15in .95in .6in}
+.pg-text p{font-size:10.2pt;max-width:70ch}
+
+/* ---------- CONTACT ---------- */
+.pg-contact{padding:1.15in .9in .6in}
+.cgrid{display:flex;flex-direction:column;gap:1px;background:#ddd;border:1px solid #ddd;margin-top:.3in}
+.cblock{background:#fff;padding:.2in .22in}
+.clabel{font-family:'JetBrains Mono';font-size:7.6pt;letter-spacing:.08em;text-transform:uppercase;color:#888;margin:0 0 .05in}
+.cval{font-size:10.5pt;margin:0;line-height:1.45}
+
+/* la barra de navegacion NUNCA debe imprimirse: regla base (fuera de
+   cualquier media query) que Chrome obedece siempre en Page.printToPDF,
+   sin depender de que el flujo de impresion "no le deje espacio". */
+.barnav{display:none}
+
+/* =====================================================================
+   MODO PANTALLA: el sitio web ES el libro, pagina por pagina, con
+   botones de anterior/siguiente. En impresion (Page.printToPDF usa
+   @media print) nada de esto se activa. */
+@media screen {
+  html,body{height:100%;background:#d9d9d9}
+  .pg{display:none}
+  .pg.active{
+    display:block; position:fixed; top:calc((100vh - 64px)/2); left:50%;
+    transform:translate(-50%,-50%) scale(var(--s,1));
+    box-shadow:0 18px 60px rgba(0,0,0,.32);
+  }
+  .barnav{
+    display:flex;
+    position:fixed; left:0; right:0; bottom:0; height:64px; z-index:50;
+    align-items:center; gap:.9rem; padding:0 1rem;
+    background:rgba(255,255,255,.96); border-top:1px solid #ddd;
+    font-family:'Karla',sans-serif; backdrop-filter:blur(6px);
+  }
+  .barlogo{display:flex;align-items:center;gap:.5rem;text-decoration:none;color:#1c1c1c;flex:0 0 auto}
+  .barlogo img{width:22px;height:22px}
+  .barlogo span{font-family:'Fraunces';font-weight:700;font-size:.85rem;display:none}
+  @media (min-width:640px){ .barlogo span{display:inline} }
+  .barctl{flex:1;display:flex;align-items:center;justify-content:center;gap:.9rem;min-width:0}
+  .barctl button{
+    font-family:'JetBrains Mono';font-size:1rem;width:38px;height:38px;border-radius:50%;
+    border:1px solid #ccc;background:#fff;cursor:pointer;color:#1c1c1c;flex:0 0 auto;
+  }
+  .barctl button:disabled{opacity:.35;cursor:default}
+  .barctl button:not(:disabled):hover{background:#f1f1f1}
+  .barinfo{text-align:center;min-width:0;overflow:hidden}
+  .barinfo .barpage{display:block;font-family:'JetBrains Mono';font-size:.68rem;color:#888;letter-spacing:.04em}
+  .barinfo .barchapter{display:block;font-family:'Fraunces';font-weight:700;font-size:.85rem;color:#1c1c1c;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .bardl{
+    flex:0 0 auto;font-family:'JetBrains Mono';font-size:.72rem;letter-spacing:.04em;text-transform:uppercase;
+    text-decoration:none;color:#fff;background:#1c3f8f;padding:.5rem .8rem;border-radius:5px;white-space:nowrap;
+  }
+  .bardl:hover{background:#16306e}
+  @media (max-width:480px){ .bardl span.full{display:none} }
+  .pg-toc .tocrow{cursor:pointer}
+  .pg-toc .tocrow:hover .toctitle{text-decoration:underline}
+}
+</style>
+</head>
+<body>
+
+<div class="pg pg-cover">
+  <div class="photo" style="background-image:url('assets/fotos/index-cover.jpg')"></div>
+  <div class="frame"></div>
+  <div class="band band-title">
+    <h1>Sierra de Álica</h1>
+    <p>Capital natural que hay que proteger</p>
+  </div>
+  <div class="band band-pub">Fundación Biósfera de Álica, A.C.</div>
+</div>
+
+<div class="pg pg-front">
+  <div class="photo" style="background-image:url('assets/fotos/dosel-musgo-real.jpg')"></div>
+  <div class="wash"></div>
+  <div class="content">
+    <img class="mark" src="assets/jaguar.png" alt="">
+    <p class="org">Fundación Biósfera de Álica, A.C.</p>
+  </div>
+  <p class="rights">Edición digital 2026 · Fundación Biósfera de Álica, A.C.</p>
+</div>
+
+<div class="pg pg-toc">
+  <p class="tockicker">Fundación Biósfera de Álica, A.C.</p>
+  <h1>Contenido</h1>
+  <div class="toclist">
+      <div class="tocrow">
+        <span class="tocnum" style="color:#1c3f8f">04</span>
+        <span class="tocbar" style="background:#1c3f8f"></span>
+        <div class="toctext">
+          <span class="toctitle">Sierra de Álica</span>
+          <span class="tocdesc">Territorio, hidrología y biodiversidad de la reserva</span>
+        </div>
+      </div>
+      <div class="tocrow">
+        <span class="tocnum" style="color:#b3402b">13</span>
+        <span class="tocbar" style="background:#b3402b"></span>
+        <div class="toctext">
+          <span class="toctitle">La Fundación</span>
+          <span class="tocdesc">Historia, visión, misión y valores</span>
+        </div>
+      </div>
+      <div class="tocrow">
+        <span class="tocnum" style="color:#a85a26">18</span>
+        <span class="tocbar" style="background:#a85a26"></span>
+        <div class="toctext">
+          <span class="toctitle">Nuestras Causas</span>
+          <span class="tocdesc">Hábitat, cultura y ciencia</span>
+        </div>
+      </div>
+      <div class="tocrow">
+        <span class="tocnum" style="color:#3f7a2e">21</span>
+        <span class="tocbar" style="background:#3f7a2e"></span>
+        <div class="toctext">
+          <span class="toctitle">Proyectos en Marcha</span>
+          <span class="tocdesc">Guardabosques, polinizadores, vivero y más</span>
+        </div>
+      </div>
+      <div class="tocrow">
+        <span class="tocnum" style="color:#3f7a2e">27</span>
+        <span class="tocbar" style="background:#3f7a2e"></span>
+        <div class="toctext">
+          <span class="toctitle">Bonos de Carbono</span>
+          <span class="tocdesc">Alianza con Dimitra Technology</span>
+        </div>
+      </div>
+      <div class="tocrow">
+        <span class="tocnum" style="color:#1c3f8f">31</span>
+        <span class="tocbar" style="background:#1c3f8f"></span>
+        <div class="toctext">
+          <span class="toctitle">Fauna de la Sierra</span>
+          <span class="tocdesc">Especies que habitan el polígono</span>
+        </div>
+      </div>
+      <div class="tocrow">
+        <span class="tocnum" style="color:#a85a26">33</span>
+        <span class="tocbar" style="background:#a85a26"></span>
+        <div class="toctext">
+          <span class="toctitle">Cómo Puedes Ayudarnos</span>
+          <span class="tocdesc">Voluntariado, donativos y proyectos verdes</span>
+        </div>
+      </div>
+      <div class="tocrow">
+        <span class="tocnum" style="color:#1c3f8f">34</span>
+        <span class="tocbar" style="background:#1c3f8f"></span>
+        <div class="toctext">
+          <span class="toctitle">Contacto</span>
+          <span class="tocdesc">Escríbenos</span>
+        </div>
+      </div></div>
+</div>
+
+<div class="pg pg-content" style="--accent:#1c3f8f">
+  <div class="photo" style="background-image:url('assets/fotos/territorio-hero.jpg')"><span class="cap">Sierra de Álica, Nayarit</span></div>
+  <div class="body">
+    <p class="kicker">El territorio</p>
+    <h2>Sierra de Álica</h2>
+    <p>La Sierra de Álica es una región de gran biodiversidad, y lugar étnico sagrado, con inigualables recursos naturales, impactantes paisajes, ríos y bosques. Con un gran número de especies endémicas y/o en peligro de extinción, esta sierra constituye un hábitat de incomparable riqueza biótica y abiótica, que la posiciona como uno de los principales tesoros naturales de México.</p><p>El Área Natural Protegida CADNR 043, Estado de Nayarit, es el nombre oficial que ya tiene este polígono. Es un reservorio clave de biodiversidad que proporciona servicios ambientales vitales: regulación hídrica, fertilidad de suelos, captura de carbono y producción de oxígeno.</p><ul class="leaf"><li>Polígono natural que comprende las presas de Aguamilpa y El Cajón, con una superficie de 346,225.95 hectáreas: el núcleo, de 17,800 hectáreas, y la zona de amortiguamiento, de 328,425.95 hectáreas.</li><li>Integrada por cinco municipios del Estado de Nayarit: El Nayar, La Yesca, Santa María del Oro, Tepic y Jala.</li><li>Su altura varía de 200 a 2,250 metros sobre el nivel medio del mar.</li></ul>
+    <p class="cite">Fuente: INEGI, 2015. Marco Geoestadístico Municipal; CONANP, 2016. Estudio Previo Justificativo, Sierra de Álica, Nayarit.</p>
+    
+  </div>
+  <p class="footfolio">Sierra de Álica</p>
+</div>
+
+<div class="pg pg-photo">
+  <div class="photo" style="background-image:url('assets/fotos/dosel-musgo-real.jpg')"><span class="cap">Dosel de niebla, Sierra de Álica</span></div>
+  <div class="frame"></div>
+</div>
+
+<div class="pg pg-content" style="--accent:#1c3f8f">
+  <div class="photo" style="background-image:url('assets/fotos/presa-real.jpg')"><span class="cap">La presa, recorrida en lancha</span></div>
+  <div class="body">
+    <p class="kicker">Hidrología</p>
+    <h2>La cuenca 174 dispone de importantes recursos hídricos</h2>
+    <p>La Sierra de Álica alberga la segunda cuenca más importante de México, con un volumen anual de extracción de 28,614,034 hm³ y una disponibilidad de aguas subterráneas de 33,885,660 hm³ al año.</p><ul class="leaf"><li>Cuenca hidrográfica: Huaynamota, Bolaños-Huaynamota, Atengo y Huajimic.</li><li>Ríos: el Santiago, con 562 km, alimentado por los ríos Bolaños, Huaynamota, Juchipila y Río Verde.</li><li>Presas: Aguamilpa y El Cajón, ambas de generación de energía eléctrica.</li></ul>
+    <p class="cite">Fuente: CONANP, 2016. Estudio Previo Justificativo para el establecimiento del área natural protegida, Sierra de Álica, Nayarit.</p>
+    
+  </div>
+  <p class="footfolio">Sierra de Álica</p>
+</div>
+
+<div class="pg pg-content" style="--accent:#3f7a2e">
+  <div class="photo" style="background-image:url('assets/fotos/habitat-header2.jpg')"><span class="cap">Acantilado entre la niebla</span></div>
+  <div class="body">
+    <p class="kicker">Microclimas y suelos</p>
+    <h2>Seis microclimas, cinco tipos de suelo</h2>
+    <p>Microclimas que prevalecen en el polígono: cálido subhúmedo y semicálido subhúmedo, cada uno en sus variantes de menor, media y mayor humedad en verano.</p><p>Los suelos van del Leptosol, somero y pedregoso, al Phaeozem, rico en humus, pasando por Cambisol, Regosol y Luvisol, cada uno con su propia capacidad de retener agua y sostener vida.</p>
+    <p class="cite">Fuentes: INEGI 2010 y 2007. SEMARNAT, CONABIO y Fundación Biósfera de Álica, A.C.</p>
+    
+  </div>
+  <p class="footfolio">Sierra de Álica</p>
+</div>
+
+<div class="pg pg-content" style="--accent:#3f7a2e">
+  <div class="photo" style="background-image:url('assets/fotos/bio-1.jpg')"><span class="cap">Bosque de pino con niebla</span></div>
+  <div class="body">
+    <p class="kicker">Biodiversidad</p>
+    <h2>4,964 registros entre los tres reinos</h2>
+    <p>La Sierra de Álica alberga una extraordinaria diversidad biológica. Esta riqueza abarca tres reinos fundamentales de la vida: Plantae, Animalia y Fungi, cada uno desempeñando un papel crucial en el equilibrio del ecosistema.</p>
+    <div class="factrow"><div class="fact"><b>2,932</b><span>Especies de plantas</span></div><div class="fact"><b>1,553</b><span>Especies de animales</span></div><div class="fact"><b>479</b><span>Especies de hongos</span></div></div>
+  </div>
+  <p class="footfolio">Sierra de Álica</p>
+</div>
+
+<div class="pg pg-tablepage" style="--accent:#3f7a2e">
+  <div class="tbody">
+    <div class="tphoto2" style="background-image:url('assets/fotos/bio-2.jpg')"><span class="cap">Dosel del bosque con niebla</span></div>
+    <p class="kicker">Reino Plantae</p>
+    <h2>2,932 registros</h2>
+    <p class="lede">Bryophyta, Coniferophyta, Magnoliophyta y Pteridophyta, agrupados por clase.</p>
+    <table class=""><thead><tr><th>Phylum</th><th>Clase</th><th>Cantidad</th></tr></thead><tbody><tr><td>Bryophyta</td><td>Anthocerotopsida</td><td>4</td></tr><tr><td>Bryophyta</td><td>Bryopsida</td><td>n/d</td></tr><tr><td>Bryophyta</td><td>Hepaticopsida</td><td>n/d</td></tr><tr><td>Coniferophyta</td><td>Pinopsida</td><td>12</td></tr><tr><td>Magnoliophyta</td><td>Liliopsida</td><td>n/d</td></tr><tr><td>Magnoliophyta</td><td>Magnoliopsida</td><td>n/d</td></tr><tr><td>Pteridophyta</td><td>Equisetopsida</td><td>1</td></tr><tr><td>Pteridophyta</td><td>Lycopodiopsida</td><td>15</td></tr><tr><td>Pteridophyta</td><td>Polypodiopsida</td><td>129</td></tr><tr><td>Pteridophyta</td><td>Psilotopsida</td><td>7</td></tr><tr class="hl"><td>Total</td><td></td><td>2,932</td></tr></tbody></table>
+    <p class="cite">Cuatro celdas están cubiertas por el brillo del flash en el documento original y se marcan como n/d; el total, 2,932, sí es legible con claridad.</p>
+  </div>
+  <p class="footfolio">Sierra de Álica</p>
+</div>
+
+<div class="pg pg-tablepage" style="--accent:#1c3f8f">
+  <div class="tbody">
+    <div class="tphoto2" style="background-image:url('assets/fotos/fauna-jaguar.jpg')"><span class="cap">Jaguar (Panthera onca)</span></div>
+    <p class="kicker">Reino Animalia</p>
+    <h2>1,553 registros</h2>
+    <p class="lede">Chordata y Arthropoda, agrupados por clase.</p>
+    <table class=""><thead><tr><th>Phylum</th><th>Clase</th><th>Cantidad</th></tr></thead><tbody><tr><td>Chordata</td><td>Amphibia</td><td>28</td></tr><tr><td>Chordata</td><td>Aves</td><td>477</td></tr><tr><td>Chordata</td><td>Mammalia</td><td>113</td></tr><tr><td>Chordata</td><td>Reptilia</td><td>64</td></tr><tr><td>Arthropoda</td><td>Insecta</td><td>763</td></tr><tr><td>Arthropoda</td><td>Arachnida</td><td>108</td></tr><tr class="hl"><td>Total</td><td></td><td>1,553</td></tr></tbody></table>
+    <p class="cite">Los seis valores de esta tabla son legibles con claridad en el documento original y suman exactamente el total reportado.</p>
+  </div>
+  <p class="footfolio">Sierra de Álica</p>
+</div>
+
+<div class="pg pg-tablepage" style="--accent:#a85a26">
+  <div class="tbody">
+    <div class="tphoto2" style="background-image:url('assets/fotos/fauna-hongo.jpg')"><span class="cap">Amanita caesarea</span></div>
+    <p class="kicker">Reino Fungi</p>
+    <h2>479 registros</h2>
+    <p class="lede">Ascomycota, Basidiomycota y Chytridiomycota, agrupados por clase.</p>
+    <table class=""><thead><tr><th>Phylum</th><th>Clase</th><th>Cantidad</th></tr></thead><tbody><tr><td>Ascomycota</td><td>Dothideomycetes</td><td>n/d</td></tr><tr><td>Ascomycota</td><td>Eurotiomycetes</td><td>1</td></tr><tr><td>Ascomycota</td><td>Lecanoromycetes</td><td>n/d</td></tr><tr><td>Ascomycota</td><td>Leotiomycetes</td><td>2</td></tr><tr><td>Ascomycota</td><td>Pezizomycetes</td><td>n/d</td></tr><tr><td>Ascomycota</td><td>Saccharomycetes</td><td>48</td></tr><tr><td>Basidiomycota</td><td>Agaricomycetes</td><td>n/d</td></tr><tr><td>Basidiomycota</td><td>Dacrymycetes</td><td>3</td></tr><tr><td>Basidiomycota</td><td>Exobasidiomycetes</td><td>1</td></tr><tr><td>Basidiomycota</td><td>Microbotryomycetes</td><td>1</td></tr><tr><td>Basidiomycota</td><td>Pucciniomycetes</td><td>83</td></tr><tr><td>Basidiomycota</td><td>Tremellomycetes</td><td>2</td></tr><tr><td>Basidiomycota</td><td>Ustilaginomycetes</td><td>3</td></tr><tr><td>Chytridiomycota</td><td>Blastocladiomycetes</td><td>1</td></tr><tr class="hl"><td>Total</td><td></td><td>479</td></tr></tbody></table>
+    <p class="cite">Cuatro celdas están cubiertas por el brillo del flash en el documento original y se marcan como n/d; el total, 479, sí es legible con claridad.</p>
+  </div>
+  <p class="footfolio">Sierra de Álica</p>
+</div>
+
+<div class="pg pg-photo">
+  <div class="photo" style="background-image:url('assets/fotos/bio-3.jpg')"><span class="cap">Musgos y helechos del sotobosque</span></div>
+  <div class="frame"></div>
+</div>
+
+<div class="pg pg-content" style="--accent:#b3402b">
+  <div class="photo" style="background-image:url('assets/fotos/fundacion-hero-real.jpg')"><span class="cap">Sierra de Álica, al amanecer</span></div>
+  <div class="body">
+    <p class="kicker">La organización</p>
+    <h2>Fundación Biósfera de Álica, A.C.</h2>
+    <p>El proyecto Fundación Biósfera de Álica nace del sentimiento y la convicción de que no hay esfuerzo, por mínimo que sea, que carezca de valor para revertir el sentido de la pérdida de biodiversidad de la Sierra de Álica.</p><p>El origen y la pasión nayarita por la naturaleza, del Dr. Antonio Muñoz Santiago, viene desde sus abuelos maternos. Desde 2004 buscó el apoyo de la Presidencia de la República y de instancias gubernamentales, como SEMARNAT, para proteger este ecosistema. El 20 de mayo de 2015, quedó constituida la Fundación Biósfera de Álica, A.C., que tiene como principal objetivo buscar la declaratoria de la Sierra de Álica como Reserva de la Biósfera.</p><p>Promovemos iniciativas que fortalecen la biodiversidad y la conectividad biológica, y consolidamos un modelo de gestión que garantice la armonía entre naturaleza, cultura y desarrollo humano.</p>
+    
+    
+  </div>
+  <p class="footfolio">La fundación</p>
+</div>
+
+<div class="pg pg-content" style="--accent:#b3402b">
+  <div class="photo" style="background-image:url('assets/fotos/fundacion-figura.jpg')"><span class="cap">Vista desde la sierra</span></div>
+  <div class="body">
+    <p class="kicker">Quiénes somos</p>
+    <h2>Profesionistas, amigos y familia con un sueño común</h2>
+    <p>Somos un grupo multidisciplinario de profesionistas, amigos y familia, con un sueño común: conservar, proteger y aprovechar, sustentable y culturalmente, la Sierra de Álica, como un capital natural para la presente y las futuras generaciones.</p><p>Nuestra labor se sustenta en la ciencia, la innovación y la participación comunitaria, generando proyectos que fortalecen la biodiversidad y promueven un modelo de desarrollo sostenible y equitativo.</p>
+    <div class="factrow"><div class="fact"><b>328,425.95 ha</b><span>Área de amortiguamiento</span></div><div class="fact"><b>17,800 ha</b><span>Área núcleo</span></div><div class="fact"><b>90%</b><span>Consentimiento de propietarios</span></div></div>
+  </div>
+  <p class="footfolio">La fundación</p>
+</div>
+
+<div class="pg pg-band" style="--accent:#b3402b">
+  <div>
+    <p class="kicker">Visión</p>
+    <h2>Preservar y conservar, sustentable y culturalmente, la Sierra de Álica, como capital natural para la humanidad.</h2>
+  </div>
+  <p class="footfolio footfolio-band">La fundación</p>
+</div>
+
+<div class="pg pg-band" style="--accent:#8a1f1f">
+  <div>
+    <p class="kicker">Misión</p>
+    <h2>Impulsar la protección, conservación y desarrollo sustentable de la Sierra de Álica, de sus comunidades y su vinculación con la ciencia y el progreso.</h2>
+  </div>
+  <p class="footfolio footfolio-band">La fundación</p>
+</div>
+
+<div class="pg pg-band pg-band-values" style="--accent:#a85a26">
+  <div class="vhead">
+    <p class="kicker">Valores</p>
+    <h2>Creemos en principios como los del ICFO</h2>
+  </div>
+  <div class="vgrid"><div class="vcard"><h3>Respeto a la Tierra</h3><p>A los ecosistemas, a la biodiversidad, a las etnias huichol y cora, a las comunidades circunvecinas.</p></div><div class="vcard"><h3>Consciencia</h3><p>Agentes de cambio que generan conciencia ambiental para el progreso y desarrollo sustentable.</p></div><div class="vcard"><h3>Apego a nuestras raíces</h3><p>Somos parte de ellas: la riqueza ancestral de nuestras etnias y su legado cosmogónico.</p></div><div class="vcard"><h3>Pasión por la naturaleza</h3><p>Por el cuidado y protección de la naturaleza de nuestro hábitat.</p></div><div class="vcard"><h3>Transparencia y responsabilidad</h3><p>Congruencia en nuestras operaciones con todos los grupos de interés.</p></div></div>
+  <p class="footfolio footfolio-band">La fundación</p>
+</div>
+
+<div class="pg pg-content" style="--accent:#1c3f8f">
+  <div class="photo" style="background-image:url('assets/fotos/proyectos-hero-real.jpg')"><span class="cap">Panorámica de la Sierra de Álica</span></div>
+  <div class="body">
+    <p class="kicker">01 · El trabajo</p>
+    <h2>Hábitat Álica</h2>
+    <p>Nuestra primera tarea es lograr la Declaratoria de la Sierra de Álica como Reserva de la Biósfera.</p><ul class="leaf"><li>Conservación y Protección: conservamos y protegemos activamente el capital natural de la Sierra de Álica.</li><li>Cambio Climático: acciones de mitigación y adaptación para los activos ambientales de la Sierra de Álica.</li><li>Biodiversidad: protegemos la biodiversidad endémica de flora, fauna, micobiota y microbiota.</li></ul>
+    
+    <div class="pullquote"><span class="pqmark">&#8220;</span>Impulsar la protección, conservación y desarrollo sustentable de la Sierra de Álica, de sus comunidades y su vinculación con la ciencia y el progreso.</div>
+  </div>
+  <p class="footfolio">Nuestras causas</p>
+</div>
+
+<div class="pg pg-content" style="--accent:#a85a26">
+  <div class="photo" style="background-image:url('assets/fotos/cultural-chaquira.jpg')"><span class="cap">Arte huichol en chaquira</span></div>
+  <div class="body">
+    <p class="kicker">02 · El trabajo</p>
+    <h2>Cultural, Étnica y Social</h2>
+    <p>Apoyamos una mejor calidad de vida de las comunidades indígenas de la región, con proyectos de desarrollo sustentable inclusivo.</p><ul class="leaf"><li>Identidad y Calidad de Vida: salud, alimentación y educación, con base en su idiosincrasia y costumbres.</li><li>Arte Indígena: comercio justo que propicia el desarrollo artístico de las comunidades étnicas.</li><li>Proyectos Productivos: bienestar, identidad y salvaguarda del legado.</li><li>Vinculación Étnica: un punto de encuentro con otras etnias de México y Mesoamérica.</li></ul>
+    
+    <div class="pullquote"><span class="pqmark">&#8220;</span>Traemos en la sangre la riqueza ancestral de nuestras etnias y su legado cosmogónico.</div>
+  </div>
+  <p class="footfolio">Nuestras causas</p>
+</div>
+
+<div class="pg pg-content" style="--accent:#3f7a2e">
+  <div class="photo" style="background-image:url('assets/fotos/cientifica-header2.jpg')"><span class="cap">Bosque de niebla, Sierra de Álica</span></div>
+  <div class="body">
+    <p class="kicker">03 · El trabajo</p>
+    <h2>Científica y Educativa</h2>
+    <p>Fomentamos la conservación a través de proyectos de investigación científica, desarrollo tecnológico y educación ambiental.</p><ul class="leaf"><li>Educación Ambiental: en la educación básica, media superior y superior, y en empresas.</li><li>Vinculación Académica: con universidades, investigación y servicio social.</li><li>Investigación y Desarrollo: proyectos productivos en industrias alimenticia, farmacéutica, agrícola y biotecnología.</li><li>Fuente de Biodiversidad: bancos de germoplasma y datos naturales para la ciencia.</li></ul>
+    
+    <div class="pullquote"><span class="pqmark">&#8220;</span>Generamos conocimiento científico y fomentamos la participación social.</div>
+  </div>
+  <p class="footfolio">Nuestras causas</p>
+</div>
+
+<div class="pg pg-projects pg-projects-photo" style="--accent:#1c3f8f">
+  <div class="photo-side" style="background-image:url('assets/fotos/anp-1.jpg')"><span class="cap">Cañón de la presa, Sierra de Álica</span></div>
+  <div class="pbody">
+    <p class="kicker">En marcha</p>
+    <h2>El polígono y la declaratoria</h2>
+    
+      <div class="pentry">
+        <span class="pnum">01</span>
+        <div><h3>Área Natural Protegida CADNR 043</h3><p>Espacio protegido destinado a la conservación y manejo de la biodiversidad de la Sierra de Álica: fauna, flora, micobiota y microbiota. Este polígono asegura la protección de los ecosistemas de la sierra y contribuye a la sostenibilidad ambiental de la región.</p></div>
+      </div>
+      <div class="pentry">
+        <span class="pnum">02</span>
+        <div><h3>Declaratoria de Reserva Biósfera de Álica</h3><p>Lograr que el gobierno de México reconozca a la Sierra de Álica como Reserva de la Biósfera. La primera tarea de la fundación, y sigue abierta.</p></div>
+      </div>
+    <div class="pullquote"><span class="pqmark">&#8220;</span>Preservar y conservar, sustentable y culturalmente, la Sierra de Álica, como capital natural para la humanidad.</div>
+  </div>
+  <p class="footfolio">Proyectos en marcha</p>
+</div>
+
+<div class="pg pg-projects pg-projects-photo" style="--accent:#3f7a2e">
+  <div class="photo-side" style="background-image:url('assets/fotos/guardabosques-1.jpg')"><span class="cap">Guardabosques en recorrido</span></div>
+  <div class="pbody">
+    <p class="kicker">En marcha</p>
+    <h2>Protección diaria</h2>
+    
+      <div class="pentry">
+        <span class="pnum">03</span>
+        <div><h3>Guardabosques</h3><p>Prevención, detección y control de incendios forestales, tala inmoderada y caza furtiva, mediante vigilancia permanente y respuesta inmediata. Recorridos en selva baja caducifolia, selva media perennifolia y bosques mixtos de pino-encino, que fortalecen la seguridad ambiental de la Sierra de Álica.</p></div>
+      </div>
+    <div class="pullquote"><span class="pqmark">&#8220;</span>Conservamos y protegemos activamente el capital natural de la Sierra de Álica.</div>
+  </div>
+  <p class="footfolio">Proyectos en marcha</p>
+</div>
+
+<div class="pg pg-projects pg-projects-photo" style="--accent:#a85a26">
+  <div class="photo-side" style="background-image:url('assets/fotos/santuario-1.jpg')"><span class="cap">Colmenas del Santuario de Polinizadores</span></div>
+  <div class="pbody">
+    <p class="kicker">En marcha</p>
+    <h2>Polinizadores</h2>
+    
+      <div class="pentry">
+        <span class="pnum">04</span>
+        <div><h3>Santuario de Polinizadores</h3><p>Protección y fomento de abejas, abejorros, avispas, colibríes, escarabajos, hormigas, mariposas, murciélagos y polillas: agentes clave para la reproducción de plantas y la seguridad alimentaria. Impulsa educación ambiental y participación comunitaria, y promueve la diversidad genética de especies nativas.</p></div>
+      </div>
+    <div class="pullquote"><span class="pqmark">&#8220;</span>Protegemos la biodiversidad endémica de flora, fauna, micobiota y microbiota.</div>
+  </div>
+  <p class="footfolio">Proyectos en marcha</p>
+</div>
+
+<div class="pg pg-twin" style="--accent:#3f7a2e">
+  <p class="kicker">En marcha</p>
+  <h2>Vivero y Sombreadero Forestal</h2>
+  <div class="twingrid">
+      <div class="twin">
+        <div class="tphoto" style="background-image:url('assets/fotos/vivero-1.jpg')"><span class="cap">Vivero Forestal, Sierra de Álica</span></div>
+        <div class="twinhead"><span class="pnum">05</span><h3>Vivero Forestal</h3></div>
+        <p>Propagación masiva de plantas melíferas y forestales, apoyo a la investigación y restauración de ecosistemas degradados. Fortalece corredores biológicos y contribuye a la mitigación del cambio climático mediante la captura de carbono.</p>
+      </div>
+      <div class="twin">
+        <div class="tphoto" style="background-image:url('assets/fotos/sombreadero-1.jpg')"><span class="cap">Sombreadero Forestal, Sierra de Álica</span></div>
+        <div class="twinhead"><span class="pnum">06</span><h3>Sombreadero Forestal</h3></div>
+        <p>Protege plántulas forestales y melíferas contra radiación solar excesiva y lluvias intensas, optimizando su supervivencia en etapas tempranas e incrementando la capacidad de restauración ecológica en programas comunitarios.</p>
+      </div></div>
+  <p class="footfolio">Proyectos en marcha</p>
+</div>
+
+<div class="pg pg-projects pg-projects-photo" style="--accent:#8a1f1f">
+  <div class="photo-side" style="background-image:url('assets/fotos/reforestacion-1.jpg')"><span class="cap">Reforestación con especies nativas</span></div>
+  <div class="pbody">
+    <p class="kicker">En marcha</p>
+    <h2>Reforestación y más</h2>
+    
+      <div class="pentry">
+        <span class="pnum">07</span>
+        <div><h3>Cabaña Polifuncional</h3><p>Estancias de investigadores en biotecnología agrícola, forestal, micología, bacteriología y entomología. Impulsa la investigación aplicada y la innovación sustentable, fortaleciendo la vinculación entre la ciencia, las comunidades locales y la conservación.</p></div>
+      </div>
+      <div class="pentry">
+        <span class="pnum">08</span>
+        <div><h3>Fuente de Biodiversidad</h3><p>Los primeros catálogos y censos biológicos como banco de datos natural.</p></div>
+      </div>
+      <div class="pentry">
+        <span class="pnum">09</span>
+        <div><h3>Manejo Sustentable de Bosques</h3><p>Compensación monetaria por el uso racional de los bosques, para fomentar su cuidado.</p></div>
+      </div>
+      <div class="pentry">
+        <span class="pnum">10</span>
+        <div><h3>Ecovilla</h3><p>Hospedaje, centro educativo, centro cultural y laboratorios.</p></div>
+      </div>
+      <div class="pentry">
+        <span class="pnum">11</span>
+        <div><h3>Vive Álica</h3><p>Protección y recuperación del patrimonio cultural huichol: arte, lenguas, usos y costumbres.</p></div>
+      </div>
+    
+  </div>
+  <p class="footfolio">Proyectos en marcha</p>
+</div>
+
+<div class="pg pg-photo">
+  <div class="photo" style="background-image:url('assets/fotos/bonos-hero.jpg')"><span class="cap">Bosque de la Sierra de Álica</span></div>
+  <div class="frame"></div>
+</div>
+
+<div class="pg pg-stat" style="--accent:#3f7a2e">
+  <div class="sbody">
+    <p class="kicker">El proyecto más grande</p>
+    <h2>Bonos de Carbono, con Dimitra Technology</h2>
+    <p>La Fundación Biósfera de Álica y Dimitra Technology unen fuerzas para desarrollar proyectos de conservación y bienestar comunitario en la Sierra de Álica. Dimitra es una empresa global de Agtech que provee tecnología y capacitación a pequeños agricultores.</p><p>El proyecto busca reducir y capturar gases de efecto invernadero mediante conservación y manejo sustentable. Cada bono representa la mitigación de una tonelada de CO₂.</p>
+    <div class="statgrid"><div class="statbox"><b>4.6</b><span>Bonos de carbono por hectárea, esperados</span></div><div class="statbox"><b>50% / 50%</b><span>Reparto entre la Fundación y Dimitra, y los propietarios</span></div><div class="statbox"><b>≥50%</b><span>Utilidades garantizadas para ejidos y comunidades indígenas</span></div></div>
+  </div>
+  <p class="footfolio">Bonos de carbono</p>
+</div>
+
+<div class="pg pg-list pg-dual" style="--accent:#3f7a2e">
+  <p class="kicker">Impactos, objetivos y actividades</p>
+  <h2>Ambientales, sociales, económicos y en campo</h2>
+  <p class="lede">Conservar y restaurar ecosistemas forestales, evitar la deforestación, proteger la biodiversidad y garantizar la calidad del agua en la Sierra de Álica.</p>
+  <div class="dualgrid">
+    <div class="dualcol"><h3 class="dualhead">Impactos y objetivos</h3>
+          <div class="litem">
+            <span class="lnum">01</span>
+            <div><h3>Ambientales</h3><p>Reducción de gases de efecto invernadero. Conservación de bosques, suelos y cuerpos de agua.</p></div>
+          </div>
+          <div class="litem">
+            <span class="lnum">02</span>
+            <div><h3>Sociales</h3><p>Empleo local en conservación y reforestación. Educación ambiental para la comunidad.</p></div>
+          </div>
+          <div class="litem">
+            <span class="lnum">03</span>
+            <div><h3>Económicos</h3><p>Recursos de la venta de bonos, reinvertidos en proyectos ambientales y comunitarios.</p></div>
+          </div></div>
+    <div class="dualcol"><h3 class="dualhead">Actividades clave en campo</h3>
+          <div class="litem">
+            <span class="lnum">01</span>
+            <div><h3>Monitoreo comunitario</h3><p>Capacitación a ejidatarios para medir altura, DAP y supervivencia de los árboles.</p></div>
+          </div>
+          <div class="litem">
+            <span class="lnum">02</span>
+            <div><h3>Prevención de incendios</h3><p>Brigadas comunitarias y cortafuegos.</p></div>
+          </div>
+          <div class="litem">
+            <span class="lnum">03</span>
+            <div><h3>Restauración de suelos</h3><p>Plantación de especies nativas y cobertura vegetal en áreas degradadas.</p></div>
+          </div>
+          <div class="litem">
+            <span class="lnum">04</span>
+            <div><h3>Reforestación</h3><p>Especies melíferas y forestales, hábitats funcionales para la fauna nativa.</p></div>
+          </div>
+          <div class="litem">
+            <span class="lnum">05</span>
+            <div><h3>Capacitación comunitaria</h3><p>Talleres de sostenibilidad, gestión forestal y créditos de carbono.</p></div>
+          </div></div>
+  </div>
+  <p class="footfolio">Bonos de carbono</p>
+</div>
+
+<div class="pg pg-tablepage" style="--accent:#3f7a2e">
+  <div class="tbody">
+    
+    <p class="kicker">En contexto</p>
+    <h2>Cómo se compara contra otros proyectos de carbono en México</h2>
+    <p class="lede">Distribución de recursos y actividades de conservación en seis proyectos de carbono.</p>
+    <table class="wide"><thead><tr><th>Proyecto</th><th>Ubicación</th><th>Prop.</th><th>Desarr.</th><th>Actividades principales</th></tr></thead><tbody><tr class="hl"><td>Bonos de Carbono
+FBA y Dimitra</td><td>Nayarit</td><td>50%</td><td>50%</td><td>Monitoreo comunitario (DAP, altura). Prevención de incendios con brigadas y cortafuegos. Plantación de especies melíferas y forestales.</td></tr><tr><td>Scolel Té</td><td>Chiapas</td><td>60–70%</td><td>30–40%</td><td>Reforestación con Pinus y Quercus. Manejo forestal certificado FSC. Restauración de suelos con composta.</td></tr><tr><td>San Juan Lachao</td><td>Oaxaca</td><td>50–60%</td><td>40–50%</td><td>Reforestación nativa. Monitoreo por teledetección (Sentinel-2). Viveros comunitarios.</td></tr><tr><td>Captura de Carbono
+Com. Indígenas</td><td>Oaxaca</td><td>55–65%</td><td>35–45%</td><td>Enriquecimiento de bosques y cafetales. Monitoreo de stocks de carbono. Educación ambiental.</td></tr><tr><td>Pueblo Nuevo
+(Xico2e)</td><td>Durango</td><td>70% (+5%)</td><td>30% (+5%)</td><td>Manejo forestal en 49,932 ha. Monitoreo con drones. Cortafuegos y vigilancia comunitaria.</td></tr><tr><td>México2: El Ocote</td><td>Chiapas</td><td>50–60%</td><td>40–50%</td><td>Reforestación de selva degradada. Mediciones de biomasa y teledetección.</td></tr></tbody></table>
+    <p class="cite">El proyecto de la Sierra de Álica es, junto con Scolel Té, el que reparte una mayor proporción de utilidades a los propietarios de tierras entre los seis comparados aquí.</p>
+  </div>
+  <p class="footfolio">Bonos de carbono</p>
+</div>
+
+<div class="pg pg-text" style="--accent:#3f7a2e">
+  <div class="txbody">
+    <p class="kicker">Conclusiones</p>
+    <h2>Tecnología, conservación y comunidad</h2>
+    <p>La alianza entre la Fundación Biósfera de Álica y Dimitra Technology protege la Sierra de Álica, impulsa la conservación forestal y genera beneficios directos para las comunidades que habitan la región.</p><p>Este proyecto fortalece el vínculo entre tecnología, sostenibilidad y desarrollo comunitario, y permite la creación de un modelo innovador que combina la captura de carbono, la preservación de ecosistemas y la generación de ingresos sostenibles.</p><p>Con la implementación de los bonos de carbono, se establece una vía clara para combatir el cambio climático y garantizar que las utilidades se reinviertan en conservación y bienestar social.</p><p>De esta forma, la Fundación Biósfera de Álica y Dimitra Technology consolidan un compromiso compartido con el medio ambiente y las comunidades locales, asegurando un impacto positivo que trasciende generaciones.</p>
+  </div>
+  <p class="footfolio">Bonos de carbono</p>
+</div>
+
+<div class="pg pg-content" style="--accent:#1c3f8f">
+  <div class="photo" style="background-image:url('assets/fotos/dscn0979-web.jpg')"><span class="cap">Formaciones rocosas, Sierra de Álica</span></div>
+  <div class="body">
+    <p class="kicker">Vida silvestre</p>
+    <h2>Fauna de la Sierra de Álica</h2>
+    <p>El Reino Animalia de la Sierra de Álica suma 1,553 registros: 477 especies de aves, 113 de mamíferos, 64 de reptiles y 28 de anfibios, además de 763 de insectos y 108 de arácnidos.</p><p>No es posible retratar cada una de esas especies, pero sí presentar algunas de las más representativas de este territorio: las mismas que la propia Fundación eligió, desde su primer libro, como símbolo de la fauna que protege.</p>
+    <p class="cite">Fuente: CONANP, 2016. Estudio Previo Justificativo, Sierra de Álica, Nayarit. Fundación Biósfera de Álica, A.C.</p>
+    <div class="pullquote"><span class="pqmark">&#8220;</span>Protegemos la biodiversidad endémica de flora, fauna, micobiota y microbiota.</div>
+  </div>
+  <p class="footfolio">Fauna de la Sierra</p>
+</div>
+
+<div class="pg pg-fauna" style="--accent:#1c3f8f">
+  <p class="kicker">Especies representativas</p>
+  <h2>Tres vecinos de la sierra</h2>
+  <p class="lede">Un mamífero, un ave rapaz y el jaguar: el mismo animal que la Fundación eligió como su propio emblema.</p>
+  <div class="faunagrid">
+      <div class="faunacard">
+        <div class="fphoto" style="background-image:url('assets/fotos/fauna-jaguar.jpg')"></div>
+        <h3>Jaguar</h3>
+        <p class="fsci">Panthera onca</p>
+        <p class="fnote">Felino más grande de América; especie sombrilla de la Sierra de Álica y emblema de la Fundación.</p>
+      </div>
+      <div class="faunacard">
+        <div class="fphoto" style="background-image:url('assets/fotos/fauna-venado.jpg')"></div>
+        <h3>Venado cola blanca</h3>
+        <p class="fsci">Odocoileus virginianus</p>
+        <p class="fnote">El mamífero más representativo de los bosques de pino-encino de la sierra.</p>
+      </div>
+      <div class="faunacard">
+        <div class="fphoto" style="background-image:url('assets/fotos/fauna-ave.jpg')"></div>
+        <h3>Aguililla</h3>
+        <p class="fsci">Buteo sp.</p>
+        <p class="fnote">Una de las 477 especies de aves registradas en el polígono de la reserva.</p>
+      </div></div>
+  <p class="cite fauna-cite">Fotografía propia de esta edición, ambientada en el bosque de niebla de la Sierra de Álica.</p>
+  <p class="footfolio">Fauna de la Sierra</p>
+</div>
+
+<div class="pg pg-content" style="--accent:#a85a26">
+  <div class="photo" style="background-image:url('assets/fotos/como-ayudar-hero.jpg')"><span class="cap">Vista desde la sierra</span></div>
+  <div class="body">
+    <p class="kicker">Participar</p>
+    <h2>Cómo puedes ayudarnos</h2>
+    <p>Hay diversas maneras de apoyarnos en la labor que realizamos. Lo importante es la voluntad y el compartir esta causa común de protección y conservación de la Sierra de Álica y de sus comunidades.</p><ul class="leaf"><li>Sumándote a nuestra causa, formando parte del voluntariado.</li><li>Participación en campañas, eventos y donativos web.</li><li>Proyectos verdes y sustentables: la incubadora de iniciativas de innovación.</li><li>Tesis, prácticas profesionales y servicio social.</li></ul>
+    
+    
+  </div>
+  <p class="footfolio">Cómo puedes ayudarnos</p>
+</div>
+
+<div class="pg pg-contact" style="--accent:#1c3f8f">
+  <p class="kicker">Escríbenos</p>
+  <h2>Contacto</h2>
+  <div class="cgrid">
+      <div class="cblock">
+        <p class="clabel">Correo</p>
+        <p class="cval">info@biosferadealica.org</p>
+      </div>
+      <div class="cblock">
+        <p class="clabel">Antonio Muñoz</p>
+        <p class="cval">Tel: (81) 1988 6447<br>antoniomm1@icloud.com</p>
+      </div>
+      <div class="cblock">
+        <p class="clabel">Fernanda Méndez</p>
+        <p class="cval">Tel: (33) 1068 0463<br>evafernandamendezobregon@gmail.com</p>
+      </div>
+      <div class="cblock">
+        <p class="clabel">Dirección</p>
+        <p class="cval">Puerto Marqués No. 911, Col. Narvarte<br>Monterrey, N.L., CP 64830</p>
+      </div>
+      <div class="cblock">
+        <p class="clabel">El territorio</p>
+        <p class="cval">Sierra de Álica, Nayarit<br>El Nayar, La Yesca, Santa María del Oro, Tepic y Jala</p>
+      </div></div>
+  <p class="footfolio">Contacto</p>
+</div>
+
+<div class="pg pg-cover">
+  <div class="photo" style="background-image:url('assets/fotos/index-cover.jpg')"></div>
+  <div class="frame"></div>
+  <div class="band band-title">
+    <h1>Reaprender a valorar</h1>
+    <p>y cultivar el origen de la vida</p>
+  </div>
+  <div class="band band-pub">Fundación Biósfera de Álica, A.C.</div>
+</div>
+
+<div class="barnav" id="barnav">
+  <a class="barlogo" href="#p1" onclick="event.preventDefault()">
+    <img src="assets/jaguar.png" alt="">
+    <span>Sierra de Álica</span>
+  </a>
+  <div class="barctl">
+    <button id="btnPrev" aria-label="Página anterior" type="button">‹</button>
+    <div class="barinfo">
+      <span class="barpage" id="pageCounter"></span>
+      <span class="barchapter" id="chapterLbl"></span>
+    </div>
+    <button id="btnNext" aria-label="Página siguiente" type="button">›</button>
+  </div>
+  <a class="bardl" href="sierra-de-alica-libro-completo.pdf" download><span class="full">Descargar </span>PDF</a>
+</div>
+
+<script>
+(function(){
+  var pages = Array.prototype.slice.call(document.querySelectorAll('.pg'));
+  var n = pages.length;
+  if(!n) return;
+  var NATW = 8.27*96, NATH = 11.69*96;
+  var idx = 0;
+
+  var btnPrev = document.getElementById('btnPrev');
+  var btnNext = document.getElementById('btnNext');
+  var counter = document.getElementById('pageCounter');
+  var chapterLbl = document.getElementById('chapterLbl');
+
+  function clamp(i){ return Math.max(0, Math.min(n-1, i)); }
+
+  function fitScale(){
+    var vw = window.innerWidth, vh = window.innerHeight - 64;
+    var s = Math.min((vw*0.94)/NATW, (vh*0.92)/NATH, 1.15);
+    document.documentElement.style.setProperty('--s', s);
+  }
+
+  function render(){
+    pages.forEach(function(p,i){ p.classList.toggle('active', i===idx); });
+    counter.textContent = 'Página ' + (idx+1) + ' de ' + n;
+    var fol = pages[idx].querySelector('.footfolio');
+    chapterLbl.textContent = fol ? fol.textContent : '';
+    btnPrev.disabled = (idx===0);
+    btnNext.disabled = (idx===n-1);
+    if(history.replaceState){ history.replaceState(null, '', '#p'+(idx+1)); }
+    fitScale();
+  }
+
+  function go(delta){ idx = clamp(idx+delta); render(); }
+
+  btnPrev.addEventListener('click', function(){ go(-1); });
+  btnNext.addEventListener('click', function(){ go(1); });
+
+  window.addEventListener('keydown', function(e){
+    if(e.key==='ArrowRight' || e.key==='PageDown'){ go(1); }
+    else if(e.key==='ArrowLeft' || e.key==='PageUp'){ go(-1); }
+    else if(e.key==='Home'){ idx=0; render(); }
+    else if(e.key==='End'){ idx=n-1; render(); }
+  });
+  window.addEventListener('resize', fitScale);
+
+  var touchStartX = null;
+  window.addEventListener('touchstart', function(e){ touchStartX = e.touches[0].clientX; }, {passive:true});
+  window.addEventListener('touchend', function(e){
+    if(touchStartX===null) return;
+    var dx = e.changedTouches[0].clientX - touchStartX;
+    if(Math.abs(dx) > 50){ go(dx<0 ? 1 : -1); }
+    touchStartX = null;
+  }, {passive:true});
+
+  document.body.addEventListener('click', function(e){
+    var row = e.target.closest && e.target.closest('.tocrow');
+    if(!row) return;
+    var numEl = row.querySelector('.tocnum');
+    if(!numEl) return;
+    var target = parseInt(numEl.textContent, 10) - 1;
+    if(!isNaN(target)){ idx = clamp(target); render(); }
+  });
+
+  var m = location.hash.match(/p(\d+)/);
+  if(m){ idx = clamp(parseInt(m[1],10) - 1); }
+
+  render();
+})();
+</script>
+</body>
+</html>
