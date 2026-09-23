@@ -64,7 +64,11 @@ img{max-width:none}
 .pg-content h2, .pg-band h2, .pg-projects h2, .pg-twin h2, .pg-list h2, .pg-stat h2, .pg-tablepage h2, .pg-text h2, .pg-contact h2{
   font-family:'Fraunces';font-weight:700;font-size:16.5pt;margin:0 0 .18in;letter-spacing:0;line-height:1.18;color:#1c1c1c;
 }
-.pg-content p, .pg-text p, .pg-stat p{font-size:11pt;line-height:1.72;margin:0 0 .2in;color:#333}
+/* :not(.footfolio) es a proposito: sin el, este selector (clase+etiqueta,
+   mas especifico que la sola clase .footfolio) le gana al pie de pagina
+   -que tambien es un <p>- y lo deja grande y oscuro solo en estas tres
+   plantillas. Esa era la causa real de la inconsistencia entre paginas. */
+.pg-content p:not(.footfolio), .pg-text p:not(.footfolio), .pg-stat p:not(.footfolio){font-size:11pt;line-height:1.72;margin:0 0 .2in;color:#333}
 ul.leaf{list-style:none;padding:0;margin:.2in 0 0}
 ul.leaf li{position:relative;padding-left:.26in;font-size:10.4pt;line-height:1.58;margin-bottom:.17in;color:#333}
 ul.leaf li::before{content:"\2756";position:absolute;left:0;color:var(--accent);font-size:8pt;top:.05in}
@@ -143,9 +147,14 @@ ul.leaf li::before{content:"\2756";position:absolute;left:0;color:var(--accent);
 /* ---------- TABLE PAGE ---------- */
 .pg-tablepage{padding:1.05in .8in .6in}
 .pg-tablepage .lede{font-size:10pt;color:#555;margin:.08in 0 .22in;max-width:70ch;line-height:1.4}
-.tphoto2{position:relative;width:100%;height:1.7in;background-size:cover;background-position:center;margin-bottom:.26in;border:1px solid #ddd}
+/* variante con foto: mismo formato exacto que .pg-content (foto de 4.5in a
+   todo lo ancho, arriba, sin marco; el cuerpo empieza justo debajo) */
+.pg-tablepage-photo{padding:0}
+.pg-tablepage-photo .photo{position:absolute;top:0;left:0;right:0;height:4.5in;background-size:cover;background-position:center}
+.pg-tablepage-photo .tbody{position:absolute;top:4.68in;left:.75in;right:.75in;bottom:.55in}
+.pg-tablepage-photo .lede{margin:.08in 0 .18in}
 table{width:100%;border-collapse:collapse;font-size:8.6pt}
-th,td{border:1px solid #ccc;padding:.09in .1in;text-align:left;vertical-align:top;line-height:1.32;word-wrap:break-word}
+th,td{border:1px solid #ccc;padding:.055in .1in;text-align:left;vertical-align:top;line-height:1.22;word-wrap:break-word}
 th{background:#eee;font-family:'JetBrains Mono';font-size:7.2pt;text-transform:uppercase;letter-spacing:.03em}
 tr.hl td{background:#eef3e9;font-weight:700}
 table.wide{table-layout:fixed;font-size:8pt}
@@ -169,7 +178,7 @@ table.wide tr.hl td:nth-child(5){font-weight:400}
 
 /* ---------- TEXT PAGE ---------- */
 .pg-text{padding:1.15in .95in .6in}
-.pg-text p{font-size:10.2pt;max-width:70ch}
+.pg-text p:not(.footfolio){font-size:10.2pt;max-width:70ch}
 
 /* ---------- CONTACT ---------- */
 .pg-contact{padding:1.15in .9in .6in}
@@ -371,9 +380,9 @@ table.wide tr.hl td:nth-child(5){font-weight:400}
   <p class="footfolio">Sierra de Álica</p>
 </div>
 
-<div class="pg pg-tablepage" style="--accent:#3f7a2e">
+<div class="pg pg-tablepage pg-tablepage-photo" style="--accent:#3f7a2e">
+  <div class="photo" style="background-image:url('assets/fotos/bio-2.jpg')"><span class="cap">Dosel del bosque con niebla</span></div>
   <div class="tbody">
-    <div class="tphoto2" style="background-image:url('assets/fotos/bio-2.jpg')"><span class="cap">Dosel del bosque con niebla</span></div>
     <p class="kicker">Reino Plantae</p>
     <h2>2,932 registros</h2>
     <p class="lede">Bryophyta, Coniferophyta, Magnoliophyta y Pteridophyta, agrupados por clase.</p>
@@ -383,9 +392,9 @@ table.wide tr.hl td:nth-child(5){font-weight:400}
   <p class="footfolio">Sierra de Álica</p>
 </div>
 
-<div class="pg pg-tablepage" style="--accent:#1c3f8f">
+<div class="pg pg-tablepage pg-tablepage-photo" style="--accent:#1c3f8f">
+  <div class="photo" style="background-image:url('assets/fotos/fauna-jaguar.jpg')"><span class="cap">Jaguar (Panthera onca)</span></div>
   <div class="tbody">
-    <div class="tphoto2" style="background-image:url('assets/fotos/fauna-jaguar.jpg')"><span class="cap">Jaguar (Panthera onca)</span></div>
     <p class="kicker">Reino Animalia</p>
     <h2>1,553 registros</h2>
     <p class="lede">Chordata y Arthropoda, agrupados por clase.</p>
@@ -395,9 +404,9 @@ table.wide tr.hl td:nth-child(5){font-weight:400}
   <p class="footfolio">Sierra de Álica</p>
 </div>
 
-<div class="pg pg-tablepage" style="--accent:#a85a26">
+<div class="pg pg-tablepage pg-tablepage-photo" style="--accent:#a85a26">
+  <div class="photo" style="background-image:url('assets/fotos/fauna-hongo.jpg')"><span class="cap">Amanita caesarea</span></div>
   <div class="tbody">
-    <div class="tphoto2" style="background-image:url('assets/fotos/fauna-hongo.jpg')"><span class="cap">Amanita caesarea</span></div>
     <p class="kicker">Reino Fungi</p>
     <h2>479 registros</h2>
     <p class="lede">Ascomycota, Basidiomycota y Chytridiomycota, agrupados por clase.</p>
@@ -652,8 +661,8 @@ table.wide tr.hl td:nth-child(5){font-weight:400}
 </div>
 
 <div class="pg pg-tablepage" style="--accent:#3f7a2e">
+  
   <div class="tbody">
-    
     <p class="kicker">En contexto</p>
     <h2>Cómo se compara contra otros proyectos de carbono en México</h2>
     <p class="lede">Distribución de recursos y actividades de conservación en seis proyectos de carbono.</p>
