@@ -170,15 +170,18 @@ table.wide th:nth-child(5),table.wide td:nth-child(5){width:57%}
 table.wide tr.hl td:nth-child(5){font-weight:400}
 
 /* ---------- FAUNA GRID ---------- */
-.pg-fauna{padding:1.05in .5in .6in}
-.pg-fauna .lede{font-size:10.5pt;color:#555;margin:.1in 0 0;max-width:64ch;line-height:1.5}
-.faunagrid{display:flex;gap:.2in;margin-top:.32in}
-.faunacard{flex:1}
-.faunacard .fphoto{width:100%;aspect-ratio:3/4;background-size:cover;background-position:center;margin-bottom:.18in;border:1px solid #ddd}
-.faunacard h3{font-family:'Fraunces';font-weight:700;font-size:13.5pt;margin:0 0 .03in}
-.faunacard .fsci{font-family:'JetBrains Mono';font-style:italic;font-size:8.5pt;color:var(--accent);margin:0 0 .1in}
-.faunacard .fnote{font-size:9.6pt;color:#333;line-height:1.48;margin:0}
-.fauna-cite{margin-top:.32in}
+.pg-fauna{padding:.85in .5in .45in}
+.pg-fauna .lede{font-size:10pt;color:#555;margin:.06in 0 0;max-width:64ch;line-height:1.35}
+/* 2 por fila (mas grandes) y la tercera abajo centrada: en una sola fila
+   de 3, el ancho de la hoja (8.27in) es lo que limita el tamaño; a 2 por
+   fila caben fotos bastante mas grandes sin recortar al animal. */
+.faunagrid{display:flex;flex-wrap:wrap;justify-content:center;gap:.22in .3in;margin-top:.14in}
+.faunacard{flex:0 0 2.3in}
+.faunacard .fphoto{width:100%;aspect-ratio:3/4;background-size:cover;background-position:center;margin-bottom:.13in;border:1px solid #ddd}
+.faunacard h3{font-family:'Fraunces';font-weight:700;font-size:12.5pt;margin:0 0 .02in}
+.faunacard .fsci{font-family:'JetBrains Mono';font-style:italic;font-size:8pt;color:var(--accent);margin:0 0 .06in}
+.faunacard .fnote{font-size:8.8pt;color:#333;line-height:1.36;margin:0}
+.fauna-cite{margin-top:.08in}
 
 /* ---------- TEXT PAGE ---------- */
 .pg-text{padding:1.15in .95in .6in}
