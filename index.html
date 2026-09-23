@@ -138,6 +138,10 @@ ul.leaf li::before{content:"\2756";position:absolute;left:0;color:var(--accent);
 
 /* ---------- DUAL LIST (paginas fusionadas) ---------- */
 .dualgrid{display:flex;gap:.5in;margin-top:.32in}
+.pg-stat .dualgrid-tight{margin-top:.4in}
+.pg-stat .dualgrid .litem{margin-top:.2in}
+.pg-stat .dualgrid .litem h3{font-size:10.6pt}
+.pg-stat .dualgrid .litem p{font-size:9pt}
 .dualcol{flex:1}
 .dualhead{font-family:'JetBrains Mono';font-size:9pt;text-transform:uppercase;letter-spacing:.06em;color:var(--accent);margin:0 0 .04in;padding-bottom:.12in;border-bottom:1px solid #ddd}
 .dualcol .litem{margin-top:.24in}
@@ -166,14 +170,14 @@ table.wide th:nth-child(5),table.wide td:nth-child(5){width:57%}
 table.wide tr.hl td:nth-child(5){font-weight:400}
 
 /* ---------- FAUNA GRID ---------- */
-.pg-fauna{padding:1.05in .85in .6in}
+.pg-fauna{padding:1.05in .5in .6in}
 .pg-fauna .lede{font-size:10.5pt;color:#555;margin:.1in 0 0;max-width:64ch;line-height:1.5}
-.faunagrid{display:flex;gap:.28in;margin-top:.32in}
+.faunagrid{display:flex;gap:.2in;margin-top:.32in}
 .faunacard{flex:1}
-.faunacard .fphoto{width:100%;aspect-ratio:3/4;background-size:cover;background-position:center;margin-bottom:.15in;border:1px solid #ddd}
-.faunacard h3{font-family:'Fraunces';font-weight:700;font-size:12.5pt;margin:0 0 .02in}
-.faunacard .fsci{font-family:'JetBrains Mono';font-style:italic;font-size:8pt;color:var(--accent);margin:0 0 .1in}
-.faunacard .fnote{font-size:9.2pt;color:#333;line-height:1.46;margin:0}
+.faunacard .fphoto{width:100%;height:5.4in;background-size:cover;background-position:center;margin-bottom:.18in;border:1px solid #ddd}
+.faunacard h3{font-family:'Fraunces';font-weight:700;font-size:13.5pt;margin:0 0 .03in}
+.faunacard .fsci{font-family:'JetBrains Mono';font-style:italic;font-size:8.5pt;color:var(--accent);margin:0 0 .1in}
+.faunacard .fnote{font-size:9.6pt;color:#333;line-height:1.48;margin:0}
 .fauna-cite{margin-top:.32in}
 
 /* ---------- TEXT PAGE ---------- */
@@ -303,7 +307,7 @@ table.wide tr.hl td:nth-child(5){font-weight:400}
         </div>
       </div>
       <div class="tocrow">
-        <span class="tocnum" style="color:#1c3f8f">31</span>
+        <span class="tocnum" style="color:#1c3f8f">29</span>
         <span class="tocbar" style="background:#1c3f8f"></span>
         <div class="toctext">
           <span class="toctitle">Fauna de la Sierra</span>
@@ -311,7 +315,7 @@ table.wide tr.hl td:nth-child(5){font-weight:400}
         </div>
       </div>
       <div class="tocrow">
-        <span class="tocnum" style="color:#a85a26">33</span>
+        <span class="tocnum" style="color:#a85a26">31</span>
         <span class="tocbar" style="background:#a85a26"></span>
         <div class="toctext">
           <span class="toctitle">Cómo Puedes Ayudarnos</span>
@@ -319,7 +323,7 @@ table.wide tr.hl td:nth-child(5){font-weight:400}
         </div>
       </div>
       <div class="tocrow">
-        <span class="tocnum" style="color:#1c3f8f">34</span>
+        <span class="tocnum" style="color:#1c3f8f">32</span>
         <span class="tocbar" style="background:#1c3f8f"></span>
         <div class="toctext">
           <span class="toctitle">Contacto</span>
@@ -358,7 +362,7 @@ table.wide tr.hl td:nth-child(5){font-weight:400}
 </div>
 
 <div class="pg pg-content" style="--accent:#3f7a2e">
-  <div class="photo" style="background-image:url('assets/fotos/habitat-header2.jpg')"><span class="cap">Acantilado entre la niebla</span></div>
+  <div class="photo" style="background-image:url('assets/fotos/habitat-header2.jpg')"><span class="cap">Cañón de la Sierra de Álica</span></div>
   <div class="body">
     <p class="kicker">Microclimas y suelos</p>
     <h2>Seis microclimas, cinco tipos de suelo</h2>
@@ -370,7 +374,7 @@ table.wide tr.hl td:nth-child(5){font-weight:400}
 </div>
 
 <div class="pg pg-content" style="--accent:#3f7a2e">
-  <div class="photo" style="background-image:url('assets/fotos/bio-1.jpg')"><span class="cap">Bosque de pino con niebla</span></div>
+  <div class="photo" style="background-image:url('assets/fotos/bio-1.jpg')"><span class="cap">Bosque de pino, Sierra de Álica</span></div>
   <div class="body">
     <p class="kicker">Biodiversidad</p>
     <h2>4,964 registros entre los tres reinos</h2>
@@ -388,6 +392,7 @@ table.wide tr.hl td:nth-child(5){font-weight:400}
     <p class="lede">Bryophyta, Coniferophyta, Magnoliophyta y Pteridophyta, agrupados por clase.</p>
     <table class=""><thead><tr><th>Phylum</th><th>Clase</th><th>Cantidad</th></tr></thead><tbody><tr><td>Bryophyta</td><td>Anthocerotopsida</td><td>4</td></tr><tr><td>Bryophyta</td><td>Bryopsida</td><td>n/d</td></tr><tr><td>Bryophyta</td><td>Hepaticopsida</td><td>n/d</td></tr><tr><td>Coniferophyta</td><td>Pinopsida</td><td>12</td></tr><tr><td>Magnoliophyta</td><td>Liliopsida</td><td>n/d</td></tr><tr><td>Magnoliophyta</td><td>Magnoliopsida</td><td>n/d</td></tr><tr><td>Pteridophyta</td><td>Equisetopsida</td><td>1</td></tr><tr><td>Pteridophyta</td><td>Lycopodiopsida</td><td>15</td></tr><tr><td>Pteridophyta</td><td>Polypodiopsida</td><td>129</td></tr><tr><td>Pteridophyta</td><td>Psilotopsida</td><td>7</td></tr><tr class="hl"><td>Total</td><td></td><td>2,932</td></tr></tbody></table>
     <p class="cite">Cuatro celdas están cubiertas por el brillo del flash en el documento original y se marcan como n/d; el total, 2,932, sí es legible con claridad.</p>
+    
   </div>
   <p class="footfolio">Sierra de Álica</p>
 </div>
@@ -400,6 +405,7 @@ table.wide tr.hl td:nth-child(5){font-weight:400}
     <p class="lede">Chordata y Arthropoda, agrupados por clase.</p>
     <table class=""><thead><tr><th>Phylum</th><th>Clase</th><th>Cantidad</th></tr></thead><tbody><tr><td>Chordata</td><td>Amphibia</td><td>28</td></tr><tr><td>Chordata</td><td>Aves</td><td>477</td></tr><tr><td>Chordata</td><td>Mammalia</td><td>113</td></tr><tr><td>Chordata</td><td>Reptilia</td><td>64</td></tr><tr><td>Arthropoda</td><td>Insecta</td><td>763</td></tr><tr><td>Arthropoda</td><td>Arachnida</td><td>108</td></tr><tr class="hl"><td>Total</td><td></td><td>1,553</td></tr></tbody></table>
     <p class="cite">Los seis valores de esta tabla son legibles con claridad en el documento original y suman exactamente el total reportado.</p>
+    
   </div>
   <p class="footfolio">Sierra de Álica</p>
 </div>
@@ -412,6 +418,7 @@ table.wide tr.hl td:nth-child(5){font-weight:400}
     <p class="lede">Ascomycota, Basidiomycota y Chytridiomycota, agrupados por clase.</p>
     <table class=""><thead><tr><th>Phylum</th><th>Clase</th><th>Cantidad</th></tr></thead><tbody><tr><td>Ascomycota</td><td>Dothideomycetes</td><td>n/d</td></tr><tr><td>Ascomycota</td><td>Eurotiomycetes</td><td>1</td></tr><tr><td>Ascomycota</td><td>Lecanoromycetes</td><td>n/d</td></tr><tr><td>Ascomycota</td><td>Leotiomycetes</td><td>2</td></tr><tr><td>Ascomycota</td><td>Pezizomycetes</td><td>n/d</td></tr><tr><td>Ascomycota</td><td>Saccharomycetes</td><td>48</td></tr><tr><td>Basidiomycota</td><td>Agaricomycetes</td><td>n/d</td></tr><tr><td>Basidiomycota</td><td>Dacrymycetes</td><td>3</td></tr><tr><td>Basidiomycota</td><td>Exobasidiomycetes</td><td>1</td></tr><tr><td>Basidiomycota</td><td>Microbotryomycetes</td><td>1</td></tr><tr><td>Basidiomycota</td><td>Pucciniomycetes</td><td>83</td></tr><tr><td>Basidiomycota</td><td>Tremellomycetes</td><td>2</td></tr><tr><td>Basidiomycota</td><td>Ustilaginomycetes</td><td>3</td></tr><tr><td>Chytridiomycota</td><td>Blastocladiomycetes</td><td>1</td></tr><tr class="hl"><td>Total</td><td></td><td>479</td></tr></tbody></table>
     <p class="cite">Cuatro celdas están cubiertas por el brillo del flash en el documento original y se marcan como n/d; el total, 479, sí es legible con claridad.</p>
+    
   </div>
   <p class="footfolio">Sierra de Álica</p>
 </div>
@@ -422,7 +429,7 @@ table.wide tr.hl td:nth-child(5){font-weight:400}
 </div>
 
 <div class="pg pg-content" style="--accent:#b3402b">
-  <div class="photo" style="background-image:url('assets/fotos/fundacion-hero-real.jpg')"><span class="cap">Sierra de Álica, al amanecer</span></div>
+  <div class="photo" style="background-image:url('assets/fotos/fundacion-hero-real.jpg')"><span class="cap">Mar de nubes, Sierra de Álica</span></div>
   <div class="body">
     <p class="kicker">La organización</p>
     <h2>Fundación Biósfera de Álica, A.C.</h2>
@@ -613,49 +620,43 @@ table.wide tr.hl td:nth-child(5){font-weight:400}
     <h2>Bonos de Carbono, con Dimitra Technology</h2>
     <p>La Fundación Biósfera de Álica y Dimitra Technology unen fuerzas para desarrollar proyectos de conservación y bienestar comunitario en la Sierra de Álica. Dimitra es una empresa global de Agtech que provee tecnología y capacitación a pequeños agricultores.</p><p>El proyecto busca reducir y capturar gases de efecto invernadero mediante conservación y manejo sustentable. Cada bono representa la mitigación de una tonelada de CO₂.</p>
     <div class="statgrid"><div class="statbox"><b>4.6</b><span>Bonos de carbono por hectárea, esperados</span></div><div class="statbox"><b>50% / 50%</b><span>Reparto entre la Fundación y Dimitra, y los propietarios</span></div><div class="statbox"><b>≥50%</b><span>Utilidades garantizadas para ejidos y comunidades indígenas</span></div></div>
-  </div>
-  <p class="footfolio">Bonos de carbono</p>
-</div>
-
-<div class="pg pg-list pg-dual" style="--accent:#3f7a2e">
-  <p class="kicker">Impactos, objetivos y actividades</p>
-  <h2>Ambientales, sociales, económicos y en campo</h2>
-  <p class="lede">Conservar y restaurar ecosistemas forestales, evitar la deforestación, proteger la biodiversidad y garantizar la calidad del agua en la Sierra de Álica.</p>
-  <div class="dualgrid">
-    <div class="dualcol"><h3 class="dualhead">Impactos y objetivos</h3>
-          <div class="litem">
-            <span class="lnum">01</span>
-            <div><h3>Ambientales</h3><p>Reducción de gases de efecto invernadero. Conservación de bosques, suelos y cuerpos de agua.</p></div>
-          </div>
-          <div class="litem">
-            <span class="lnum">02</span>
-            <div><h3>Sociales</h3><p>Empleo local en conservación y reforestación. Educación ambiental para la comunidad.</p></div>
-          </div>
-          <div class="litem">
-            <span class="lnum">03</span>
-            <div><h3>Económicos</h3><p>Recursos de la venta de bonos, reinvertidos en proyectos ambientales y comunitarios.</p></div>
-          </div></div>
-    <div class="dualcol"><h3 class="dualhead">Actividades clave en campo</h3>
-          <div class="litem">
-            <span class="lnum">01</span>
-            <div><h3>Monitoreo comunitario</h3><p>Capacitación a ejidatarios para medir altura, DAP y supervivencia de los árboles.</p></div>
-          </div>
-          <div class="litem">
-            <span class="lnum">02</span>
-            <div><h3>Prevención de incendios</h3><p>Brigadas comunitarias y cortafuegos.</p></div>
-          </div>
-          <div class="litem">
-            <span class="lnum">03</span>
-            <div><h3>Restauración de suelos</h3><p>Plantación de especies nativas y cobertura vegetal en áreas degradadas.</p></div>
-          </div>
-          <div class="litem">
-            <span class="lnum">04</span>
-            <div><h3>Reforestación</h3><p>Especies melíferas y forestales, hábitats funcionales para la fauna nativa.</p></div>
-          </div>
-          <div class="litem">
-            <span class="lnum">05</span>
-            <div><h3>Capacitación comunitaria</h3><p>Talleres de sostenibilidad, gestión forestal y créditos de carbono.</p></div>
-          </div></div>
+    
+    <div class="dualgrid dualgrid-tight">
+      <div class="dualcol"><h3 class="dualhead">Impactos y objetivos</h3>
+              <div class="litem">
+                <span class="lnum">01</span>
+                <div><h3>Ambientales</h3><p>Reducción de gases de efecto invernadero. Conservación de bosques, suelos y cuerpos de agua.</p></div>
+              </div>
+              <div class="litem">
+                <span class="lnum">02</span>
+                <div><h3>Sociales</h3><p>Empleo local en conservación y reforestación. Educación ambiental para la comunidad.</p></div>
+              </div>
+              <div class="litem">
+                <span class="lnum">03</span>
+                <div><h3>Económicos</h3><p>Recursos de la venta de bonos, reinvertidos en proyectos ambientales y comunitarios.</p></div>
+              </div></div>
+      <div class="dualcol"><h3 class="dualhead">Actividades clave en campo</h3>
+              <div class="litem">
+                <span class="lnum">01</span>
+                <div><h3>Monitoreo comunitario</h3><p>Capacitación a ejidatarios para medir altura, DAP y supervivencia de los árboles.</p></div>
+              </div>
+              <div class="litem">
+                <span class="lnum">02</span>
+                <div><h3>Prevención de incendios</h3><p>Brigadas comunitarias y cortafuegos.</p></div>
+              </div>
+              <div class="litem">
+                <span class="lnum">03</span>
+                <div><h3>Restauración de suelos</h3><p>Plantación de especies nativas y cobertura vegetal en áreas degradadas.</p></div>
+              </div>
+              <div class="litem">
+                <span class="lnum">04</span>
+                <div><h3>Reforestación</h3><p>Especies melíferas y forestales, hábitats funcionales para la fauna nativa.</p></div>
+              </div>
+              <div class="litem">
+                <span class="lnum">05</span>
+                <div><h3>Capacitación comunitaria</h3><p>Talleres de sostenibilidad, gestión forestal y créditos de carbono.</p></div>
+              </div></div>
+    </div>
   </div>
   <p class="footfolio">Bonos de carbono</p>
 </div>
@@ -671,15 +672,7 @@ FBA y Dimitra</td><td>Nayarit</td><td>50%</td><td>50%</td><td>Monitoreo comunita
 Com. Indígenas</td><td>Oaxaca</td><td>55–65%</td><td>35–45%</td><td>Enriquecimiento de bosques y cafetales. Monitoreo de stocks de carbono. Educación ambiental.</td></tr><tr><td>Pueblo Nuevo
 (Xico2e)</td><td>Durango</td><td>70% (+5%)</td><td>30% (+5%)</td><td>Manejo forestal en 49,932 ha. Monitoreo con drones. Cortafuegos y vigilancia comunitaria.</td></tr><tr><td>México2: El Ocote</td><td>Chiapas</td><td>50–60%</td><td>40–50%</td><td>Reforestación de selva degradada. Mediciones de biomasa y teledetección.</td></tr></tbody></table>
     <p class="cite">El proyecto de la Sierra de Álica es, junto con Scolel Té, el que reparte una mayor proporción de utilidades a los propietarios de tierras entre los seis comparados aquí.</p>
-  </div>
-  <p class="footfolio">Bonos de carbono</p>
-</div>
-
-<div class="pg pg-text" style="--accent:#3f7a2e">
-  <div class="txbody">
-    <p class="kicker">Conclusiones</p>
-    <h2>Tecnología, conservación y comunidad</h2>
-    <p>La alianza entre la Fundación Biósfera de Álica y Dimitra Technology protege la Sierra de Álica, impulsa la conservación forestal y genera beneficios directos para las comunidades que habitan la región.</p><p>Este proyecto fortalece el vínculo entre tecnología, sostenibilidad y desarrollo comunitario, y permite la creación de un modelo innovador que combina la captura de carbono, la preservación de ecosistemas y la generación de ingresos sostenibles.</p><p>Con la implementación de los bonos de carbono, se establece una vía clara para combatir el cambio climático y garantizar que las utilidades se reinviertan en conservación y bienestar social.</p><p>De esta forma, la Fundación Biósfera de Álica y Dimitra Technology consolidan un compromiso compartido con el medio ambiente y las comunidades locales, asegurando un impacto positivo que trasciende generaciones.</p>
+    <p class="kicker" style="margin-top:.4in">Conclusiones</p><p>La alianza entre la Fundación Biósfera de Álica y Dimitra Technology protege la Sierra de Álica, impulsa la conservación forestal y genera beneficios directos para las comunidades que habitan la región. Este proyecto fortalece el vínculo entre tecnología, sostenibilidad y desarrollo comunitario, y permite la creación de un modelo innovador que combina la captura de carbono, la preservación de ecosistemas y la generación de ingresos sostenibles.</p><p>Con la implementación de los bonos de carbono, se establece una vía clara para combatir el cambio climático y garantizar que las utilidades se reinviertan en conservación y bienestar social. De esta forma, la Fundación Biósfera de Álica y Dimitra Technology consolidan un compromiso compartido con el medio ambiente y las comunidades locales, asegurando un impacto positivo que trasciende generaciones.</p>
   </div>
   <p class="footfolio">Bonos de carbono</p>
 </div>
@@ -724,7 +717,7 @@ Com. Indígenas</td><td>Oaxaca</td><td>55–65%</td><td>35–45%</td><td>Enrique
 </div>
 
 <div class="pg pg-content" style="--accent:#a85a26">
-  <div class="photo" style="background-image:url('assets/fotos/como-ayudar-hero.jpg')"><span class="cap">Vista desde la sierra</span></div>
+  <div class="photo" style="background-image:url('assets/fotos/como-ayudar-hero.jpg')"><span class="cap">Bosque de pino-encino, Sierra de Álica</span></div>
   <div class="body">
     <p class="kicker">Participar</p>
     <h2>Cómo puedes ayudarnos</h2>
