@@ -68,9 +68,13 @@ img{max-width:none}
    mas especifico que la sola clase .footfolio) le gana al pie de pagina
    -que tambien es un <p>- y lo deja grande y oscuro solo en estas tres
    plantillas. Esa era la causa real de la inconsistencia entre paginas. */
-.pg-content p:not(.footfolio), .pg-text p:not(.footfolio), .pg-stat p:not(.footfolio){font-size:11pt;line-height:1.72;margin:0 0 .2in;color:#333}
+/* formato general de letras del libro: todo el cuerpo de texto (parrafos,
+   vinetas, descripciones) usa el mismo tamaño (10.5pt) y va justificado;
+   solo los encabezados, etiquetas (kicker/cita/pie de pagina) y numeros
+   se quedan en su propio tamaño, a proposito. */
+.pg-content p:not(.footfolio), .pg-text p:not(.footfolio), .pg-stat p:not(.footfolio){font-size:10.5pt;line-height:1.68;margin:0 0 .2in;color:#333;text-align:justify}
 ul.leaf{list-style:none;padding:0;margin:.2in 0 0}
-ul.leaf li{position:relative;padding-left:.26in;font-size:10.4pt;line-height:1.58;margin-bottom:.17in;color:#333}
+ul.leaf li{position:relative;padding-left:.26in;font-size:10.5pt;line-height:1.56;margin-bottom:.17in;color:#333;text-align:justify}
 ul.leaf li::before{content:"\2756";position:absolute;left:0;color:var(--accent);font-size:8pt;top:.05in}
 .cite{font-size:7.2pt;color:#777;font-style:italic;border-top:1px solid #ddd;padding-top:.09in;margin-top:.16in}
 .pullquote{margin-top:.5in;padding-top:.32in;border-top:1px solid #e2e2e2;font-family:'Fraunces';font-style:italic;font-weight:400;font-size:15pt;line-height:1.5;color:var(--accent);max-width:34ch}
@@ -97,8 +101,8 @@ ul.leaf li::before{content:"\2756";position:absolute;left:0;color:var(--accent);
 .vhead h2{font-size:18pt;max-width:26ch}
 .vgrid{display:flex;flex-direction:column;gap:1px;background:rgba(255,255,255,.25)}
 .vcard{background:rgba(255,255,255,.08);padding:.22in .1in}
-.vcard h3{font-family:'Fraunces';font-weight:700;font-size:11.5pt;margin:0 0 .05in;color:#fff}
-.vcard p{font-size:9.3pt;margin:0;color:rgba(255,255,255,.85);line-height:1.4}
+.vcard h3{font-family:'Fraunces';font-weight:700;font-size:12pt;margin:0 0 .05in;color:#fff}
+.vcard p{font-size:10.5pt;margin:0;color:rgba(255,255,255,.85);line-height:1.4;text-align:justify}
 
 /* ---------- PROJECTS ---------- */
 .pg-projects{padding:.9in .85in .6in}
@@ -107,8 +111,8 @@ ul.leaf li::before{content:"\2756";position:absolute;left:0;color:var(--accent);
 .pg-projects-photo .pbody{position:absolute;top:4.68in;left:.75in;right:.75in;bottom:.55in}
 .pentry{display:flex;gap:.22in;margin-top:.34in;align-items:flex-start}
 .pentry .pnum{font-family:'JetBrains Mono';font-size:9.5pt;color:var(--accent);flex:0 0 auto;padding-top:.03in}
-.pentry h3{font-family:'Fraunces';font-weight:700;font-size:12.5pt;margin:0 0 .07in}
-.pentry p{font-size:10.4pt;margin:0;color:#333;line-height:1.56}
+.pentry h3{font-family:'Fraunces';font-weight:700;font-size:12pt;margin:0 0 .07in}
+.pentry p{font-size:10.5pt;margin:0;color:#333;line-height:1.56;text-align:justify}
 .pg-projects-photo .pullquote{margin-top:.42in}
 
 /* ---------- TWIN PHOTO ---------- */
@@ -118,8 +122,8 @@ ul.leaf li::before{content:"\2756";position:absolute;left:0;color:var(--accent);
 .tphoto{position:relative;width:100%;aspect-ratio:3/4;background-size:cover;background-position:center;margin-bottom:.18in;border:1px solid #ddd}
 .twinhead{display:flex;align-items:baseline;gap:.14in}
 .twinhead .pnum{font-family:'JetBrains Mono';font-size:9pt;color:var(--accent)}
-.twin h3{font-family:'Fraunces';font-weight:700;font-size:12.5pt;margin:0 0 .08in}
-.twin p{font-size:10.4pt;color:#333;line-height:1.6;margin:0}
+.twin h3{font-family:'Fraunces';font-weight:700;font-size:12pt;margin:0 0 .08in}
+.twin p{font-size:10.5pt;color:#333;line-height:1.56;margin:0;text-align:justify}
 
 /* ---------- STAT PAGE (Bonos hero) ---------- */
 .pg-stat{padding:1.1in .9in .6in}
@@ -130,27 +134,27 @@ ul.leaf li::before{content:"\2756";position:absolute;left:0;color:var(--accent);
 
 /* ---------- LIST PAGE ---------- */
 .pg-list{padding:1.05in .85in .6in}
-.pg-list .lede{font-size:10pt;color:#555;margin:.08in 0 0;max-width:64ch;line-height:1.45}
+.pg-list .lede{font-size:10.5pt;color:#555;margin:.08in 0 0;max-width:64ch;line-height:1.45;text-align:justify}
 .litem{display:flex;gap:.22in;margin-top:.26in;align-items:flex-start}
 .litem .lnum{font-family:'JetBrains Mono';font-size:9.5pt;color:var(--accent);flex:0 0 auto}
-.litem h3{font-family:'Fraunces';font-weight:700;font-size:11.5pt;margin:0 0 .05in}
-.litem p{font-size:9.6pt;margin:0;color:#333;line-height:1.42}
+.litem h3{font-family:'Fraunces';font-weight:700;font-size:12pt;margin:0 0 .05in}
+.litem p{font-size:10.5pt;margin:0;color:#333;line-height:1.42;text-align:justify}
 
 /* ---------- DUAL LIST (paginas fusionadas) ---------- */
 .dualgrid{display:flex;gap:.5in;margin-top:.32in}
 .pg-stat .dualgrid-tight{margin-top:.4in}
 .pg-stat .dualgrid .litem{margin-top:.2in}
-.pg-stat .dualgrid .litem h3{font-size:10.6pt}
-.pg-stat .dualgrid .litem p{font-size:9pt}
+.pg-stat .dualgrid .litem h3{font-size:12pt}
+.pg-stat .dualgrid .litem p{font-size:10.5pt;text-align:justify}
 .dualcol{flex:1}
 .dualhead{font-family:'JetBrains Mono';font-size:9pt;text-transform:uppercase;letter-spacing:.06em;color:var(--accent);margin:0 0 .04in;padding-bottom:.12in;border-bottom:1px solid #ddd}
 .dualcol .litem{margin-top:.24in}
-.dualcol .litem h3{font-size:10.8pt}
-.dualcol .litem p{font-size:9.2pt}
+.dualcol .litem h3{font-size:12pt}
+.dualcol .litem p{font-size:10.5pt;text-align:justify}
 
 /* ---------- TABLE PAGE ---------- */
 .pg-tablepage{padding:1.05in .8in .6in}
-.pg-tablepage .lede{font-size:10pt;color:#555;margin:.08in 0 .22in;max-width:70ch;line-height:1.4}
+.pg-tablepage .lede{font-size:10.5pt;color:#555;margin:.08in 0 .22in;max-width:70ch;line-height:1.4;text-align:justify}
 /* variante con foto: mismo formato exacto que .pg-content (foto de 4.5in a
    todo lo ancho, arriba, sin marco; el cuerpo empieza justo debajo) */
 .pg-tablepage-photo{padding:0}
@@ -171,21 +175,21 @@ table.wide tr.hl td:nth-child(5){font-weight:400}
 
 /* ---------- FAUNA GRID ---------- */
 .pg-fauna{padding:.85in .5in .45in}
-.pg-fauna .lede{font-size:10pt;color:#555;margin:.06in 0 0;max-width:64ch;line-height:1.35}
+.pg-fauna .lede{font-size:10.5pt;color:#555;margin:.06in 0 0;max-width:64ch;line-height:1.35;text-align:justify}
 /* 2 por fila (mas grandes) y la tercera abajo centrada: en una sola fila
    de 3, el ancho de la hoja (8.27in) es lo que limita el tamaño; a 2 por
    fila caben fotos bastante mas grandes sin recortar al animal. */
-.faunagrid{display:flex;flex-wrap:wrap;justify-content:center;gap:.22in .3in;margin-top:.14in}
+.faunagrid{display:flex;flex-wrap:wrap;justify-content:center;gap:.18in .3in;margin-top:.06in}
 .faunacard{flex:0 0 2.3in}
-.faunacard .fphoto{width:100%;aspect-ratio:3/4;background-size:cover;background-position:center;margin-bottom:.13in;border:1px solid #ddd}
-.faunacard h3{font-family:'Fraunces';font-weight:700;font-size:12.5pt;margin:0 0 .02in}
-.faunacard .fsci{font-family:'JetBrains Mono';font-style:italic;font-size:8pt;color:var(--accent);margin:0 0 .06in}
-.faunacard .fnote{font-size:8.8pt;color:#333;line-height:1.36;margin:0}
-.fauna-cite{margin-top:.08in}
+.faunacard .fphoto{width:100%;aspect-ratio:3/4;background-size:cover;background-position:center;margin-bottom:.09in;border:1px solid #ddd}
+.faunacard h3{font-family:'Fraunces';font-weight:700;font-size:12pt;margin:0 0 .02in}
+.faunacard .fsci{font-family:'JetBrains Mono';font-style:italic;font-size:8pt;color:var(--accent);margin:0 0 .03in}
+.faunacard .fnote{font-size:10.5pt;color:#333;line-height:1.3;margin:0;text-align:justify}
+.fauna-cite{margin-top:0}
 
 /* ---------- TEXT PAGE ---------- */
 .pg-text{padding:1.15in .95in .6in}
-.pg-text p:not(.footfolio){font-size:10.2pt;max-width:70ch}
+.pg-text p:not(.footfolio){font-size:10.5pt;max-width:70ch;text-align:justify}
 
 /* ---------- CONTACT ---------- */
 .pg-contact{padding:1.15in .9in .6in}
