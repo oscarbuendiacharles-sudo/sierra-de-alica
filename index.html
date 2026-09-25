@@ -110,6 +110,9 @@ ul.leaf li::before{content:"\2756";position:absolute;left:0;color:var(--accent);
 .pg-projects-photo .photo-side{position:absolute;top:0;left:0;right:0;height:4.5in;background-size:cover;background-position:center}
 .pg-projects-photo .pbody{position:absolute;top:4.68in;left:.75in;right:.75in;bottom:.55in}
 .pentry{display:flex;gap:.22in;margin-top:.34in;align-items:flex-start}
+.pdualgrid{display:flex;gap:.4in}
+.pdualcol{flex:1;min-width:0}
+.pdualcol .pentry:first-child{margin-top:.2in}
 .pentry .pnum{font-family:'JetBrains Mono';font-size:9.5pt;color:var(--accent);flex:0 0 auto;padding-top:.03in}
 .pentry h3{font-family:'Fraunces';font-weight:700;font-size:13.5pt;margin:0 0 .07in}
 .pentry p{font-size:12pt;margin:0;color:#333;line-height:1.56;text-align:justify}
@@ -593,6 +596,8 @@ table.wide tr.hl td:nth-child(5){font-weight:400}
     <p class="kicker">En marcha</p>
     <h2>Reforestación y más</h2>
     
+    <div class="pdualgrid">
+      <div class="pdualcol">
       <div class="pentry">
         <span class="pnum">07</span>
         <div><h3>Cabaña Polifuncional</h3><p>Estancias de investigadores en biotecnología agrícola, forestal, micología, bacteriología y entomología. Impulsa la investigación aplicada y la innovación sustentable, fortaleciendo la vinculación entre la ciencia, las comunidades locales y la conservación.</p></div>
@@ -600,7 +605,8 @@ table.wide tr.hl td:nth-child(5){font-weight:400}
       <div class="pentry">
         <span class="pnum">08</span>
         <div><h3>Fuente de Biodiversidad</h3><p>Los primeros catálogos y censos biológicos como banco de datos natural.</p></div>
-      </div>
+      </div></div>
+      <div class="pdualcol">
       <div class="pentry">
         <span class="pnum">09</span>
         <div><h3>Manejo Sustentable de Bosques</h3><p>Compensación monetaria por el uso racional de los bosques, para fomentar su cuidado.</p></div>
@@ -612,7 +618,8 @@ table.wide tr.hl td:nth-child(5){font-weight:400}
       <div class="pentry">
         <span class="pnum">11</span>
         <div><h3>Vive Álica</h3><p>Protección y recuperación del patrimonio cultural huichol: arte, lenguas, usos y costumbres.</p></div>
-      </div>
+      </div></div>
+    </div>
     
   </div>
   <p class="footfolio">Proyectos en marcha</p>
